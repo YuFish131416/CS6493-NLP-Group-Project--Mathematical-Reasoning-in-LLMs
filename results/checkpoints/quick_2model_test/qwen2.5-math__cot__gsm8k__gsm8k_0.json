@@ -1,0 +1,12 @@
+{
+  "problem_id": "gsm8k_0",
+  "model_name": "qwen2.5-math",
+  "prompt_method": "cot",
+  "dataset": "gsm8k",
+  "raw_response": "To determine how much Janet makes every day at the farmers' market, we need to follow these steps:\n\n1. Calculate the total number of eggs laid by the ducks each day.\n2. Subtract the number of eggs Janet eats for breakfast and the number of eggs she bakes for her friends.\n3. Determine the number of eggs left to sell at the farmers' market.\n4. Calculate the total revenue from selling the remaining eggs at $2 per egg.\n\nLet's go through each step in detail:\n\n1. Janet's ducks lay 16 eggs per day.\n2. Janet eats 3 eggs for breakfast every morning and bakes 4 eggs for her friends every day. So, the total number of eggs used each day is:\n   \\[\n   3 + 4 = 7 \\text{ eggs}\n   \\]\n3. The number of eggs left to sell at the farmers' market each day is:\n   \\[\n   16 - 7 = 9 \\text{ eggs}\n   \\]\n4. Since each egg sells for $2, the total revenue from selling 9 eggs is:\n   \\[\n   9 \\times 2 = 18 \\text{ dollars}\n   \\]\n\nTherefore, the amount Janet makes every day at the farmers' market is \\(\\boxed{18}\\).",
+  "extracted_answer": "18",
+  "is_correct": true,
+  "response_length": 992,
+  "latency_ms": 57669.03758049011,
+  "timestamp": "2026-04-08T16:50:08.660886"
+}

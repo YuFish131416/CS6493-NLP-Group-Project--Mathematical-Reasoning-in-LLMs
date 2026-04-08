@@ -1,0 +1,216 @@
+{
+  "run_id": "final_aggregated",
+  "total_problems": 156,
+  "total_correct": 92,
+  "overall_accuracy": 0.5897,
+  "summary": {
+    "deepseek-r1__cot__gsm8k": {
+      "model": "deepseek-r1",
+      "method": "cot",
+      "dataset": "gsm8k",
+      "accuracy": 1.0,
+      "correct": 2,
+      "total": 2,
+      "extract_success_rate": 1.0,
+      "avg_latency_ms": 72935.7,
+      "avg_response_length": 2038
+    },
+    "deepseek-r1__cot__math500": {
+      "model": "deepseek-r1",
+      "method": "cot",
+      "dataset": "math500",
+      "accuracy": 0.35,
+      "correct": 7,
+      "total": 20,
+      "extract_success_rate": 1.0,
+      "avg_latency_ms": 68033.9,
+      "avg_response_length": 4646.9
+    },
+    "deepseek-r1__pvp__gsm8k": {
+      "model": "deepseek-r1",
+      "method": "pvp",
+      "dataset": "gsm8k",
+      "accuracy": 1.0,
+      "correct": 2,
+      "total": 2,
+      "extract_success_rate": 1.0,
+      "avg_latency_ms": 25748.2,
+      "avg_response_length": 1826.5
+    },
+    "deepseek-r1__self_consistency__math500": {
+      "model": "deepseek-r1",
+      "method": "self_consistency",
+      "dataset": "math500",
+      "accuracy": 0.1667,
+      "correct": 2,
+      "total": 12,
+      "extract_success_rate": 1.0,
+      "avg_latency_ms": 334935.5,
+      "avg_response_length": 23676.3
+    },
+    "qwen2.5-math__cot__gsm8k": {
+      "model": "qwen2.5-math",
+      "method": "cot",
+      "dataset": "gsm8k",
+      "accuracy": 0.8,
+      "correct": 4,
+      "total": 5,
+      "extract_success_rate": 1.0,
+      "avg_latency_ms": 33107.9,
+      "avg_response_length": 1010.6
+    },
+    "qwen2.5-math__cot__math500": {
+      "model": "qwen2.5-math",
+      "method": "cot",
+      "dataset": "math500",
+      "accuracy": 0.7,
+      "correct": 14,
+      "total": 20,
+      "extract_success_rate": 1.0,
+      "avg_latency_ms": 22275.0,
+      "avg_response_length": 1256.7
+    },
+    "qwen2.5-math__least_to_most__gsm8k": {
+      "model": "qwen2.5-math",
+      "method": "least_to_most",
+      "dataset": "gsm8k",
+      "accuracy": 1.0,
+      "correct": 3,
+      "total": 3,
+      "extract_success_rate": 1.0,
+      "avg_latency_ms": 29317.3,
+      "avg_response_length": 1823.3
+    },
+    "qwen2.5-math__least_to_most__math500": {
+      "model": "qwen2.5-math",
+      "method": "least_to_most",
+      "dataset": "math500",
+      "accuracy": 0.65,
+      "correct": 13,
+      "total": 20,
+      "extract_success_rate": 1.0,
+      "avg_latency_ms": 55844.4,
+      "avg_response_length": 3317.3
+    },
+    "qwen2.5-math__pvp__gsm8k": {
+      "model": "qwen2.5-math",
+      "method": "pvp",
+      "dataset": "gsm8k",
+      "accuracy": 0.6667,
+      "correct": 2,
+      "total": 3,
+      "extract_success_rate": 1.0,
+      "avg_latency_ms": 31272.1,
+      "avg_response_length": 932.7
+    },
+    "qwen2.5-math__pvp__math500": {
+      "model": "qwen2.5-math",
+      "method": "pvp",
+      "dataset": "math500",
+      "accuracy": 0.6,
+      "correct": 12,
+      "total": 20,
+      "extract_success_rate": 1.0,
+      "avg_latency_ms": 23859.8,
+      "avg_response_length": 1542.3
+    },
+    "qwen2.5-math__self_consistency__gsm8k": {
+      "model": "qwen2.5-math",
+      "method": "self_consistency",
+      "dataset": "gsm8k",
+      "accuracy": 0.4,
+      "correct": 2,
+      "total": 5,
+      "extract_success_rate": 1.0,
+      "avg_latency_ms": 81484.0,
+      "avg_response_length": 3126.8
+    },
+    "qwen2.5-math__self_consistency__math500": {
+      "model": "qwen2.5-math",
+      "method": "self_consistency",
+      "dataset": "math500",
+      "accuracy": 0.65,
+      "correct": 13,
+      "total": 20,
+      "extract_success_rate": 1.0,
+      "avg_latency_ms": 123584.3,
+      "avg_response_length": 6915.2
+    },
+    "qwen2.5-math__self_refine__gsm8k": {
+      "model": "qwen2.5-math",
+      "method": "self_refine",
+      "dataset": "gsm8k",
+      "accuracy": 0.75,
+      "correct": 3,
+      "total": 4,
+      "extract_success_rate": 1.0,
+      "avg_latency_ms": 81309.4,
+      "avg_response_length": 170
+    },
+    "qwen2.5-math__self_refine__math500": {
+      "model": "qwen2.5-math",
+      "method": "self_refine",
+      "dataset": "math500",
+      "accuracy": 0.65,
+      "correct": 13,
+      "total": 20,
+      "extract_success_rate": 1.0,
+      "avg_latency_ms": 97564.0,
+      "avg_response_length": 1284.8
+    }
+  },
+  "aggregated": {
+    "by_model": {
+      "deepseek-r1": {
+        "correct": 13,
+        "total": 36,
+        "accuracy": 0.3611
+      },
+      "qwen2.5-math": {
+        "correct": 79,
+        "total": 120,
+        "accuracy": 0.6583
+      }
+    },
+    "by_method": {
+      "cot": {
+        "correct": 27,
+        "total": 47,
+        "accuracy": 0.5745
+      },
+      "pvp": {
+        "correct": 16,
+        "total": 25,
+        "accuracy": 0.64
+      },
+      "self_consistency": {
+        "correct": 17,
+        "total": 37,
+        "accuracy": 0.4595
+      },
+      "least_to_most": {
+        "correct": 16,
+        "total": 23,
+        "accuracy": 0.6957
+      },
+      "self_refine": {
+        "correct": 16,
+        "total": 24,
+        "accuracy": 0.6667
+      }
+    },
+    "by_dataset": {
+      "gsm8k": {
+        "correct": 18,
+        "total": 24,
+        "accuracy": 0.75
+      },
+      "math500": {
+        "correct": 74,
+        "total": 132,
+        "accuracy": 0.5606
+      }
+    }
+  },
+  "completed_at": "2026-04-08T20:24:19.754099"
+}

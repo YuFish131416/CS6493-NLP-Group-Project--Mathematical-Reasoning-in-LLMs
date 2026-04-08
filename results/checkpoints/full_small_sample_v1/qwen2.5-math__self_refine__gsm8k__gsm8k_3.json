@@ -1,0 +1,12 @@
+{
+  "problem_id": "gsm8k_3",
+  "model_name": "qwen2.5-math",
+  "prompt_method": "self_refine",
+  "dataset": "gsm8k",
+  "raw_response": "The solution provided is correct. James runs 3 sprints each week, and each sprint is 60 meters. Therefore, the total distance he runs in a week is calculated by multiplying the number of sprints by the distance of each sprint:\n\n\\[\n3 \\text{ sprints/week} \\times 60 \\text{ meters/sprint} = 180 \\text{ meters/week}\n\\]\n\nThe final answer is \\boxed{180}.",
+  "extracted_answer": "180",
+  "is_correct": false,
+  "response_length": 348,
+  "latency_ms": 54005.475759506226,
+  "timestamp": "2026-04-08T16:51:01.273525"
+}

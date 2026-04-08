@@ -1,0 +1,47 @@
+# OS files
+Thumbs.db
+.DS_Store
+Desktop.ini
+
+# Python
+__pycache__/
+.pytest_cache/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.codebuddy/
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment and secrets
+.env
+config/config.local.yaml
+*.local.*
+
+# Data and models (large files)
+data/
+!src/data/
+models/
+!src/models/
+*.gguf
+
+# Temporary
+tmp/
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store

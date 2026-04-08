@@ -1,0 +1,12 @@
+{
+  "problem_id": "math500_7",
+  "model_name": "qwen2.5-math",
+  "prompt_method": "self_refine",
+  "dataset": "math500",
+  "raw_response": "To find the angle between the two lines given by the equations \\(2x = 3y = -z\\) and \\(6x = -y = -4z\\), we first need to determine the direction vectors of these lines.\n\nStarting with the first line, we can express \\(y\\) and \\(z\\) in terms of \\(x\\):\n\\[2x = 3y \\implies y = \\frac{2}{3}x,\\]\n\\[2x = -z \\implies z = -2x.\\]\nThus, the direction vector for the first line can be written as \\(\\vec{d_1} = \\langle 3, 2, -6 \\rangle\\), which is obtained by scaling the coefficients of \\(x\\) in the expressions for \\(y\\) and \\(z\\).\n\nNext, for the second line, we express \\(y\\) and \\(z\\) in terms of \\(x\\):\n\\[6x = -y \\implies y = -6x,\\]\n\\[6x = -4z \\implies z = -\\frac{3}{2}x.\\]\nThus, the direction vector for the second line can be written as \\(\\vec{d_2} = \\langle 2, -12, 18 \\rangle\\), which is obtained by scaling the coefficients of \\(x\\) in the expressions for \\(y\\) and \\(z\\).\n\nTo find the angle \\(\\theta\\) between the two lines, we use the dot product formula:\n\\[\n\\vec{d_1} \\cdot \\vec{d_2} = \\|\\vec{d_1}\\| \\|\\vec{d_2}\\| \\cos \\theta.\n\\]\nFirst, we calculate the dot product \\(\\vec{d_1} \\cdot \\vec{d_2}\\):\n\\[\n\\vec{d_1} \\cdot \\vec{d_2} = 3 \\cdot 2 + 2 \\cdot (-12) + (-6) \\cdot 18 = 6 - 24 - 108 = -126.\n\\]\nNext, we calculate the magnitudes of \\(\\vec{d_1}\\) and \\(\\vec{d_2}\\):\n\\[\n\\|\\vec{d_1}\\| = \\sqrt{3^2 + 2^2 + (-6)^2} = \\sqrt{9 + 4 + 36} = \\sqrt{49} = 7,\n\\]\n\\[\n\\|\\vec{d_2}\\| = \\sqrt{2^2 + (-12)^2 + 18^2} = \\sqrt{4 + 144 + 324} = \\sqrt{472} = 2\\sqrt{118}.\n\\]\nNow, we substitute these values into the dot product formula:\n\\[\n-126 = 7 \\cdot 2\\sqrt{118} \\cos \\theta \\implies -126 = 14\\sqrt{118} \\cos \\theta \\implies \\cos \\theta = \\frac{-126}{14\\sqrt{118}} = \\frac{-9}{\\sqrt{118}} = -\\frac{9\\sqrt{118}}{118}.\n\\]\nThe angle \\(\\theta\\) is then given by:\n\\[\n\\theta = \\cos^{-1}\\left(-\\frac{9\\sqrt{118}}{118}\\right).\n\\]\nTo find the angle in degrees, we use a calculator:\n\\[\n\\theta \\approx 135^\\circ.\n\\]\nThus, the angle between the two lines is \\(\\boxed{135}\\) degrees.",
+  "extracted_answer": "135",
+  "is_correct": false,
+  "response_length": 1949,
+  "latency_ms": 200882.2100162506,
+  "timestamp": "2026-04-08T18:02:47.522311"
+}

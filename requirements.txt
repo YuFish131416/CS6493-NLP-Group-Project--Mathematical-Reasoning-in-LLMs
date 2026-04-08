@@ -1,0 +1,18 @@
+# Dependencies
+llama-cpp-python>=0.2.90
+transformers>=4.40.0
+openai>=1.30.0
+datasets>=2.19.0,<4.0  # Must be >=2.19.0 for pyarrow compatibility; <4.0 for huggingface_hub compat
+huggingface_hub>=0.23.0,<0.26  # Must be <0.26 to avoid repo_id validation bug with cached datasets
+pandas>=2.2.0
+jinja2>=3.1.0
+sympy>=1.12
+streamlit>=1.35.0
+plotly>=5.22.0
+matplotlib>=3.9.0
+tqdm>=4.66.0
+pyyaml>=6.0
+pytest>=8.2.0
+jupyter>=1.0.0
+ipykernel>=6.29.0
+python-dotenv>=1.0.0

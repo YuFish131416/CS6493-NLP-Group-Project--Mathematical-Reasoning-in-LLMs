@@ -1,0 +1,12 @@
+{
+  "problem_id": "math500_16",
+  "model_name": "qwen2.5-math",
+  "prompt_method": "self_refine",
+  "dataset": "math500",
+  "raw_response": "The solution provided is correct. There are no errors in reasoning, calculation, or logical flow in the given solution. The final answer is indeed \\(\\boxed{-50}\\).",
+  "extracted_answer": "-50",
+  "is_correct": true,
+  "response_length": 163,
+  "latency_ms": 31769.97709274292,
+  "timestamp": "2026-04-08T18:19:49.693202"
+}

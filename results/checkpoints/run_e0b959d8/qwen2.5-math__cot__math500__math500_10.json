@@ -1,0 +1,12 @@
+{
+  "problem_id": "math500_10",
+  "model_name": "qwen2.5-math",
+  "prompt_method": "cot",
+  "dataset": "math500",
+  "raw_response": "To find the least positive integer multiple of 30 that can be written with only the digits 0 and 2, we need to consider the properties of multiples of 30. A number is a multiple of 30 if and only if it is a multiple of both 3 and 10. \n\nFirst, let's consider the condition for a number to be a multiple of 10. A number is a multiple of 10 if and only if its last digit is 0. Therefore, the last digit of our number must be 0.\n\nNext, let's consider the condition for a number to be a multiple of 3. A number is a multiple of 3 if and only if the sum of its digits is a multiple of 3. Since our number can only contain the digits 0 and 2, the sum of its digits will be a multiple of 2 (because each digit is either 0 or 2). To make this sum a multiple of 3, the number of 2's in the number must be a multiple of 3 (since 2 is not a multiple of 3, the sum of the digits will be a multiple of 3 if and only if the number of 2's is a multiple of 3).\n\nThe smallest number that meets these criteria is 2220. Let's verify:\n- The last digit is 0, so it is a multiple of 10.\n- The sum of the digits is \\(2 + 2 + 2 + 0 = 6\\), which is a multiple of 3.\n\nTherefore, 2220 is a multiple of 30. Since we are looking for the least positive integer, we can conclude that 2220 is the smallest such number.\n\nThe answer is \\(\\boxed{2220}\\).",
+  "extracted_answer": "2220",
+  "is_correct": true,
+  "response_length": 1318,
+  "latency_ms": 17216.927528381348,
+  "timestamp": "2026-04-08T17:07:12.622859"
+}

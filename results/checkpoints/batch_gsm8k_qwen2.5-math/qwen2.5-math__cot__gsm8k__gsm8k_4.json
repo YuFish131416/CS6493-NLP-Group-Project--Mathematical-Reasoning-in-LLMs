@@ -1,0 +1,12 @@
+{
+  "problem_id": "gsm8k_4",
+  "model_name": "qwen2.5-math",
+  "prompt_method": "cot",
+  "dataset": "gsm8k",
+  "raw_response": "To determine how many cups of feed Wendi needs to give her chickens in the final meal of the day, we need to follow these steps:\n\n1. Calculate the total amount of feed Wendi gives her chickens in the morning and afternoon.\n2. Determine the total amount of feed needed for the entire day.\n3. Subtract the amount of feed given in the morning and afternoon from the total amount of feed needed for the day to find the amount of feed needed in the final meal.\n\nLet's start with the first step:\n\n1. Wendi gives her chickens 15 cups of feed in the morning and 25 cups of feed in the afternoon. So, the total amount of feed given in the morning and afternoon is:\n   \\[\n   15 + 25 = 40 \\text{ cups}\n   \\]\n\n2. Wendi has 20 chickens, and each chicken gets 3 cups of feed per day. Therefore, the total amount of feed needed for the entire day is:\n   \\[\n   20 \\times 3 = 60 \\text{ cups}\n   \\]\n\n3. To find out how many cups of feed Wendi needs to give her chickens in the final meal of the day, we subtract the amount of feed given in the morning and afternoon from the total amount of feed needed for the day:\n   \\[\n   60 - 40 = 20 \\text{ cups}\n   \\]\n\nSo, the number of cups of feed Wendi needs to give her chickens in the final meal of the day is \\(\\boxed{20}\\).",
+  "extracted_answer": "20",
+  "is_correct": true,
+  "response_length": 1251,
+  "latency_ms": 27583.91284942627,
+  "timestamp": "2026-04-08T16:42:18.842071"
+}

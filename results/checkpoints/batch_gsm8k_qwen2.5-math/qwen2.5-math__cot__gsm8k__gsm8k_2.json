@@ -1,0 +1,12 @@
+{
+  "problem_id": "gsm8k_2",
+  "model_name": "qwen2.5-math",
+  "prompt_method": "cot",
+  "dataset": "gsm8k",
+  "raw_response": "To determine the profit Josh made, we need to follow these steps:\n\n1. Calculate the total cost of the house after repairs.\n2. Determine the increased value of the house due to the repairs.\n3. Calculate the final value of the house.\n4. Subtract the total cost from the final value to find the profit.\n\nLet's go through each step in detail.\n\n1. **Calculate the total cost of the house after repairs:**\n   The original cost of the house is $80,000, and Josh spends an additional $50,000 on repairs. Therefore, the total cost is:\n   \\[\n   80,000 + 50,000 = 130,000\n   \\]\n\n2. **Determine the increased value of the house due to the repairs:**\n   The repairs increased the value of the house by 150%. This means the increased value is 150% of the original cost of the house before repairs. The original cost of the house before repairs is $80,000. Therefore, the increased value is:\n   \\[\n   150\\% \\text{ of } 80,000 = 1.5 \\times 80,000 = 120,000\n   \\]\n\n3. **Calculate the final value of the house:**\n   The final value of the house is the original cost plus the increased value due to repairs:\n   \\[\n   80,000 + 120,000 = 200,000\n   \\]\n\n4. **Subtract the total cost from the final value to find the profit:**\n   The profit is the final value of the house minus the total cost:\n   \\[\n   200,000 - 130,000 = 70,000\n   \\]\n\nTherefore, the profit Josh made is \\(\\boxed{70000}\\).",
+  "extracted_answer": "70000",
+  "is_correct": true,
+  "response_length": 1368,
+  "latency_ms": 36550.17018318176,
+  "timestamp": "2026-04-08T16:41:35.127405"
+}

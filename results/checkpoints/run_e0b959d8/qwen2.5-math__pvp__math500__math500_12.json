@@ -1,0 +1,12 @@
+{
+  "problem_id": "math500_12",
+  "model_name": "qwen2.5-math",
+  "prompt_method": "pvp",
+  "dataset": "math500",
+  "raw_response": "To solve the problem, we need to follow the steps carefully. Let's start with the first step: identify the proper divisors of 284.\n\nThe proper divisors of 284 are the positive divisors of 284 that are less than 284. We can find these by checking which numbers divide 284 without leaving a remainder. The divisors of 284 are 1, 2, 4, 71, 142, and 284. Since 284 is not a proper divisor, we exclude it. Therefore, the proper divisors of 284 are 1, 2, 4, 71, and 142.\n\nNext, we sum these proper divisors:\n\\[1 + 2 + 4 + 71 + 142 = 220.\\]\n\nNow, we need to find the proper divisors of 220 and sum them. The proper divisors of 220 are 1, 2, 4, 5, 10, 11, 20, 22, 44, 55, and 110. Summing these proper divisors, we get:\n\\[1 + 2 + 4 + 5 + 10 + 11 + 20 + 22 + 44 + 55 + 110 = 284.\\]\n\nFinally, we need to verify that the sum of the proper divisors of 220 is indeed 284, which it is. Therefore, the final answer is:\n\\[\\boxed{284}.\\]",
+  "extracted_answer": "284",
+  "is_correct": true,
+  "response_length": 920,
+  "latency_ms": 14952.164649963379,
+  "timestamp": "2026-04-08T18:47:41.018733"
+}

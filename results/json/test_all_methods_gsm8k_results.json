@@ -1,0 +1,261 @@
+{
+  "run_id": "test_all_methods_gsm8k",
+  "config": {
+    "run_id": "test_all_methods_gsm8k",
+    "models": [
+      "qwen2.5-math"
+    ],
+    "prompt_methods": [
+      "cot",
+      "self_consistency",
+      "self_refine",
+      "least_to_most",
+      "pvp"
+    ],
+    "datasets": [
+      "gsm8k"
+    ],
+    "sample_size": 3,
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "seed": 42,
+    "n_samples": 3,
+    "max_refine_rounds": 1,
+    "checkpoint_dir": "results/checkpoints",
+    "output_dir": "results",
+    "created_at": "2026-04-08T16:30:44"
+  },
+  "responses": [
+    {
+      "problem_id": "gsm8k_0",
+      "model_name": "qwen2.5-math",
+      "prompt_method": "cot",
+      "dataset": "gsm8k",
+      "raw_response": "To determine how much Janet makes every day at the farmers' market, we need to follow these steps:\n\n1. Calculate the total number of eggs laid by the ducks each day.\n2. Subtract the number of eggs Janet eats for breakfast and the number of eggs she bakes for her friends.\n3. Determine the number of eggs left to sell at the farmers' market.\n4. Calculate the total revenue from selling the remaining eggs at $2 per egg.\n\nLet's go through each step in detail:\n\n1. Janet's ducks lay 16 eggs per day.\n2. Janet eats 3 eggs for breakfast every morning and bakes 4 eggs for her friends every day. So, the total number of eggs used each day is:\n   \\[\n   3 + 4 = 7 \\text{ eggs}\n   \\]\n3. The number of eggs left to sell at the farmers' market each day is:\n   \\[\n   16 - 7 = 9 \\text{ eggs}\n   \\]\n4. Since each egg sells for $2, the total revenue from selling 9 eggs is:\n   \\[\n   9 \\times 2 = 18 \\text{ dollars}\n   \\]\n\nTherefore, the amount Janet makes every day at the farmers' market is \\(\\boxed{18}\\).",
+      "extracted_answer": "18",
+      "is_correct": true,
+      "response_length": 992,
+      "latency_ms": 29190.032720565796,
+      "timestamp": "2026-04-08T16:31:21.941491"
+    },
+    {
+      "problem_id": "gsm8k_1",
+      "model_name": "qwen2.5-math",
+      "prompt_method": "cot",
+      "dataset": "gsm8k",
+      "raw_response": "To determine the total number of bolts of fiber theboxed takes, we need to follow these steps:\n\n1. Identify the number of bolts of blue fiber the boxed takes.\n2. Calculate the number of bolts of white fiber the boxed takes.\n3. Add the number of bolts of blue fiber and white fiber together to get the total number of bolts.\n\nStep 1: The problem states that the boxed takes 2 bolts of blue fiber.\n\nStep 2: The problem also states that the boxed takes half as much white fiber as blue fiber. Since the boxed takes 2 bolts of blue fiber, it takes:\n\\[ \\frac{2}{2} = 1 \\text{ bolt of white fiber} \\]\n\nStep 3: To find the total number of bolts, we add the number of bolts of blue fiber and white fiber together:\n\\[ 2 + 1 = 3 \\]\n\nTherefore, the total number of bolts the boxed takes is \\(\\boxed{3}\\).",
+      "extracted_answer": "3",
+      "is_correct": true,
+      "response_length": 793,
+      "latency_ms": 11212.741374969482,
+      "timestamp": "2026-04-08T16:31:33.158063"
+    },
+    {
+      "problem_id": "gsm8k_2",
+      "model_name": "qwen2.5-math",
+      "prompt_method": "cot",
+      "dataset": "gsm8k",
+      "raw_response": "To determine the profit Josh made, we need to follow these steps:\n\n1. Calculate the total cost of the house after repairs.\n2. Determine the increased value of the house due to the repairs.\n3. Calculate the final value of the house.\n4. Subtract the total cost from the final value to find the profit.\n\nLet's go through each step in detail.\n\n1. **Calculate the total cost of the house after repairs:**\n   The original cost of the house is $80,000, and Josh spends an additional $50,000 on repairs. Therefore, the total cost is:\n   \\[\n   80,000 + 50,000 = 130,000\n   \\]\n\n2. **Determine the increased value of the house due to the repairs:**\n   The repairs increased the value of the house by 150%. This means the increased value is 150% of the original cost of the house before repairs. The original cost of the house before repairs is $80,000. Therefore, the increased value is:\n   \\[\n   150\\% \\text{ of } 80,000 = 1.5 \\times 80,000 = 120,000\n   \\]\n\n3. **Calculate the final value of the house:**\n   The final value of the house is the original cost plus the increased value due to repairs:\n   \\[\n   80,000 + 120,000 = 200,000\n   \\]\n\n4. **Subtract the total cost from the final value to find the profit:**\n   The profit is the final value of the house minus the total cost:\n   \\[\n   200,000 - 130,000 = 70,000\n   \\]\n\nTherefore, the profit Josh made is \\(\\boxed{70000}\\).",
+      "extracted_answer": "70000",
+      "is_correct": true,
+      "response_length": 1368,
+      "latency_ms": 22196.60186767578,
+      "timestamp": "2026-04-08T16:31:55.356687"
+    },
+    {
+      "problem_id": "gsm8k_0",
+      "model_name": "qwen2.5-math",
+      "prompt_method": "self_consistency",
+      "dataset": "gsm8k",
+      "raw_response": "To determine how much Janet makes every day at the farmers' market, we need to follow these steps:\n\n1. Calculate the total number of eggs laid by the ducks each day.\n2. Determine the number of eggs Janet uses for breakfast and baking muffins.\n3. Find out how many eggs are left for sale at the farmers' market.\n4. Calculate the revenue from selling these eggs at $2 per egg.\n\nStep 1: Calculate the total number of eggs laid by the ducks each day.\nJanet's ducks lay 16 eggs per day.\n\nStep 2: Determine the number of eggs Janet uses for breakfast and baking muffins.\nJanet eats 3 eggs for breakfast each morning and bakes 4 muffins for her friends each day. So, the total number of eggs used is:\n\\[ 3 + 4 = 7 \\text{ eggs} \\]\n\nStep 3: Find out how many eggs are left for sale at the farmers' market.\nSubtract the number of eggs used from the total number of eggs laid:\n\\[ 16 - 7 = 9 \\text{ eggs} \\]\n\nStep 4: Calculate the revenue from selling these eggs at $2 per egg.\nMultiply the number of eggs left by the price per egg:\n\\[ 9 \\times 2 = 18 \\text{ dollars} \\]\n\nTherefore, Janet makes \\(\\boxed{18}\\) dollars every day at the farmers' market.\n---SAMPLE---\nTo determine how much Janet makes every day at the farmers' market, we need to follow these steps:\n\n1. Calculate the total number of eggs laid by the ducks each day.\n2. Subtract the number of eggs Janet eats for breakfast and the number of eggs she bakes for her friends.\n3. Determine the number of eggs sold at the farmers' market.\n4. Calculate the total revenue from selling the eggs.\n\nLet's go through each step in detail:\n\n1. **Calculate the total number of eggs laid by the ducks each day:**\n   Janet's ducks lay 16 eggs per day.\n\n2. **Subtract the number of eggs Janet eats for breakfast and the number of eggs she bakes for her friends:**\n   - Janet eats 3 eggs for breakfast every morning.\n   - Janet bakes 4 eggs for her friends every day.\n   - Total eggs consumed or baked = 3 (breakfast) + 4 (baking) = 7 eggs.\n\n   Therefore, the number of eggs left to sell is:\n   \\[\n   16 - 7 = 9 \\text{ eggs}\n   \\]\n\n3. **Determine the number of eggs sold at the farmers' market:**\n   Janet has 9 eggs left to sell.\n\n4. **Calculate the total revenue from selling the eggs:**\n   Each egg is sold for $2. Therefore, the total revenue is:\n   \\[\n   9 \\text{ eggs} \\times 2 \\text{ dollars/egg} = 18 \\text{ dollars}\n   \\]\n\nThus, Janet makes \\(\\boxed{18}\\) dollars every day at the farmers' market.\n---SAMPLE---\nTo determine how much Janet makes from selling the duck eggs at the farmers' market, we need to follow these steps:\n\n1. Calculate the number of eggs left after Janet eats and bakes muffins.\n2. Determine how much she earns from selling these remaining eggs.\n\n**Step 1: Calculate the number of eggs left after Janet eats and bakes muffins.**\n\nJanet's ducks lay 16 eggs per day. She eats 3 eggs for breakfast every morning and bakes 4 eggs for her friends every day. So, the number of eggs she uses up each day is:\n\\[ 3 + 4 = 7 \\text{ eggs} \\]\n\nThe number of eggs left after she uses 7 eggs is:\n\\[ 16 - 7 = 9 \\text{ eggs} \\]\n\n**Step 2: Determine how much she earns from selling these remaining eggs.**\n\nJanet sells each remaining egg for $2. Therefore, the amount of money she makes from selling 9 eggs is:\n\\[ 9 \\times 2 = 18 \\text{ dollars} \\]\n\nSo, the amount of money Janet makes every day at the farmers' market is:\n\\[\n\\boxed{18}\n\\]",
+      "extracted_answer": "18",
+      "is_correct": true,
+      "response_length": 3386,
+      "latency_ms": 44210.612297058105,
+      "timestamp": "2026-04-08T16:32:39.570453"
+    },
+    {
+      "problem_id": "gsm8k_1",
+      "model_name": "qwen2.5-math",
+      "prompt_method": "self_consistency",
+      "dataset": "gsm8k",
+      "raw_response": "To determine the total number of bolts of fiber the source takes, we need to follow these steps:\n\n1. Identify the number of bolts of blue fiber the source takes.\n2. Calculate the number of bolts of white fiber the source takes.\n3. Add the number of bolts of blue fiber and white fiber together to get the total number of bolts.\n\nStep 1: The source takes 2 bolts of blue fiber.\nStep 2: The source takes half the amount of white fiber as blue fiber. Since it takes 2 bolts of blue fiber, it takes \\( \\frac{2}{2} = 1 \\) bolt of white fiber.\nStep 3: Add the number of bolts of blue fiber and white fiber together:\n\\[ 2 + 1 = 3 \\]\n\nTherefore, the total number of bolts of fiber the source takes is \\(\\boxed{3}\\).\n---SAMPLE---\nTo determine the total number of bolts of fiber the Robote takes, we need to follow these steps:\n\n1. Identify the amount of blue fiber the Robote takes.\n   The Robote takes 2 bolts of blue fiber.\n\n2. Determine the amount of white fiber the Robote takes.\n   The Robote takes half as much white fiber as blue fiber. Since the Robote takes 2 bolts of blue fiber, it takes:\n   \\[\n   \\frac{2}{2} = 1 \\text{ bolt of white fiber}\n   \\]\n\n3. Calculate the total amount of fiber the Robote takes by adding the bolts of blue fiber and the bolts of white fiber.\n   The total number of bolts is:\n   \\[\n   2 + 1 = 3\n   \\]\n\nTherefore, the total number of bolts of fiber the Robote takes is \\(\\boxed{3}\\).\n---SAMPLE---\nTo solve the problem of determining the total number of bolts of fiber theboxed takes, we need to follow these steps:\n\n1. **Identify the amount of blue fiber:**\n   The problem states that the boxed takes 2 bolts of blue fiber.\n\n2. **Determine the amount of white fiber:**\n   The problem also states that the boxed takes half as much white fiber as blue fiber. Since the boxed takes 2 bolts of blue fiber, the amount of white fiber is:\n   \\[\n   \\frac{2}{2} = 1 \\text{ bolt}\n   \\]\n\n3. **Calculate the total amount of fiber:**\n   To find the total number of bolts of fiber, we add the number of bolts of blue fiber and the number of bolts of white fiber:\n   \\[\n   2 \\text{ bolts of blue fiber} + 1 \\text{ bolt of white fiber} = 3 \\text{ bolts of fiber}\n   \\]\n\nTherefore, the total number of bolts of fiber the boxed takes is \\(\\boxed{3}\\).",
+      "extracted_answer": "3",
+      "is_correct": true,
+      "response_length": 2260,
+      "latency_ms": 30107.35058784485,
+      "timestamp": "2026-04-08T16:33:09.681639"
+    },
+    {
+      "problem_id": "gsm8k_2",
+      "model_name": "qwen2.5-math",
+      "prompt_method": "self_consistency",
+      "dataset": "gsm8k",
+      "raw_response": "To determine the profit Josh made from flipping the house, we need to follow these steps:\n\n1. Calculate the total initial cost of the house after repairs.\n2. Determine the increased value of the house after the repairs.\n3. Calculate the final value of the house.\n4. Subtract the total initial cost from the final value to find the profit.\n\nLet's go through each step in detail.\n\n1. **Calculate the total initial cost of the house after repairs:**\n   The original cost of the house was $80,000, and Josh spent an additional $50,000 on repairs. So, the total initial cost is:\n   \\[\n   80,000 + 50,000 = 130,000\n   \\]\n\n2. **Determine the increased value of the house after the repairs:**\n   The repairs increased the value of the house by 150%. This means the increased value is 150% of the original cost of the house plus the repairs. The original cost of the house plus the repairs is $130,000. Therefore, the increased value is:\n   \\[\n   150\\% \\text{ of } 130,000 = 1.5 \\times 130,000 = 195,000\n   \\]\n\n3. **Calculate the final value of the house:**\n   The final value of the house is the original cost plus the repairs plus the increased value due to the repairs:\n   \\[\n   130,000 + 195,000 = 325,000\n   \\]\n\n4. **Subtract the total initial cost from the final value to find the profit:**\n   The profit is the final value minus the total initial cost:\n   \\[\n   325,000 - 130,000 = 195,000\n   \\]\n\nTherefore, the profit Josh made is \\(\\boxed{195000}\\).\n---SAMPLE---\nTo determine Josh's profit, we need to follow these steps:\n\n1. Calculate the total cost of the house after the repairs.\n2. Determine the new value of the house after the repairs.\n3. Calculate the profit by subtracting the total cost from the new value of the house.\n\nLet's start with the first step. The initial cost of the house is $80,000 and Josh spends an additional $50,000 on repairs. Therefore, the total cost of the house is:\n\\[ 80,000 + 50,000 = 130,000 \\]\n\nNext, we need to find the new value of the house after the repairs. The repairs increased the value of the house by 150%. This means the new value is the original cost plus 150% of the original cost. Mathematically, this is:\n\\[ \\text{New Value} = 80,000 + (1.5 \\times 80,000) \\]\n\\[ \\text{New Value} = 80,000 + 120,000 = 200,000 \\]\n\nNow, we can calculate the profit by subtracting the total cost from the new value of the house:\n\\[ \\text{Profit} = 200,000 - 130,000 = 70,000 \\]\n\nSo, the profit Josh made is:\n\\[ \\boxed{70000} \\]\n---SAMPLE---\nTo determine Josh's profit, we need to follow these steps:\n\n1. Calculate the total cost of the house after repairs.\n2. Determine the increased value of the house after the repairs.\n3. Calculate the final value of the house after the repairs.\n4. Subtract the total cost from the final value to find the profit.\n\nLet's go through each step in detail:\n\n1. **Calculate the total cost of the house after repairs:**\n   The original cost of the house is $80,000, and Josh spends an additional $50,000 on repairs.\n   \\[\n   \\text{Total cost} = 80,000 + 50,000 = 130,000\n   \\]\n\n2. **Determine the increased value of the house after the repairs:**\n   The repairs increased the value of the house by 150%. This means the increased value is 150% of the original cost of the house.\n   \\[\n   \\text{Increased value} = 150\\% \\times 80,000 = 1.5 \\times 80,000 = 120,000\n   \\]\n\n3. **Calculate the final value of the house after the repairs:**\n   The final value of the house is the original cost plus the increased value.\n   \\[\n   \\text{Final value} = 80,000 + 120,000 = 200,000\n   \\]\n\n4. **Subtract the total cost from the final value to find the profit:**\n   \\[\n   \\text{Profit} = \\text{Final value} - \\text{Total cost} = 200,000 - 130,000 = 70,000\n   \\]\n\nTherefore, Josh's profit is \\(\\boxed{70000}\\).",
+      "extracted_answer": "70000",
+      "is_correct": true,
+      "response_length": 3755,
+      "latency_ms": 63243.9239025116,
+      "timestamp": "2026-04-08T16:34:12.928103"
+    },
+    {
+      "problem_id": "gsm8k_0",
+      "model_name": "qwen2.5-math",
+      "prompt_method": "self_refine",
+      "dataset": "gsm8k",
+      "raw_response": "The solution provided is correct. There are no errors in reasoning, calculation, or logical flow. The problem is solved step by step accurately, and the final answer is correct. Therefore, no further review is needed. The final answer is \\(\\boxed{18}\\).",
+      "extracted_answer": "18",
+      "is_correct": true,
+      "response_length": 253,
+      "latency_ms": 22784.323692321777,
+      "timestamp": "2026-04-08T16:34:35.716638"
+    },
+    {
+      "problem_id": "gsm8k_1",
+      "model_name": "qwen2.5-math",
+      "prompt_method": "self_refine",
+      "dataset": "gsm8k",
+      "raw_response": "Theboxed takes 3 bolts of fiber in total.",
+      "extracted_answer": "3",
+      "is_correct": true,
+      "response_length": 41,
+      "latency_ms": 18709.52296257019,
+      "timestamp": "2026-04-08T16:34:54.432043"
+    },
+    {
+      "problem_id": "gsm8k_2",
+      "model_name": "qwen2.5-math",
+      "prompt_method": "self_refine",
+      "dataset": "gsm8k",
+      "raw_response": "The final answer is \\(\\boxed{70000}\\).",
+      "extracted_answer": "70000",
+      "is_correct": true,
+      "response_length": 38,
+      "latency_ms": 50258.631467819214,
+      "timestamp": "2026-04-08T16:35:44.694610"
+    },
+    {
+      "problem_id": "gsm8k_0",
+      "model_name": "qwen2.5-math",
+      "prompt_method": "least_to_most",
+      "dataset": "gsm8k",
+      "raw_response": "[Decomposition]\nTo solve the problem step by step, let's break it down into simpler sub-questions:\n\n1. Determine the number of eggs Janet has each day.\n2. Calculate how many eggs Janet eats for breakfast.\n3. Calculate how many eggs Janet bakes for her friends.\n4. Determine how many eggs are left for sale at the farmers' market.\n5. Calculate the revenue from selling the eggs at the farmers' market.\n\nNow, let's list these sub-questions in order from simplest to most complex:\n\n1. Determine the number of eggs Janet has each day.\n2. Calculate how many eggs Janet eats for breakfast.\n3. Calculate how many eggs Janet bakes for her friends.\n4. Determine how many eggs are left for sale at the farmers' market.\n5. Calculate the revenue from selling the eggs at the farmers' market.\n\nSo, the sub-questions are:\n\n1. Determine the number of eggs Janet has each day.\n2. Calculate how many eggs Janet eats for breakfast.\n3. Calculate how many eggs Janet bakes for her friends.\n4. Determine how many eggs are left for sale at the farmers' market.\n5. Calculate the revenue from selling the eggs at the farmers' market.\n\nThe final answer is \\(\\boxed{5}\\).\n\n[Solution]\nTo solve the problem step by step, let's break it down into simpler sub-questions:\n\n1. **Determine the number of eggs Janet has each day.**\n   Janet's ducks lay 16 eggs per day. So, the number of eggs Janet has each day is 16.\n\n2. **Calculate how many eggs Janet eats for breakfast.**\n   Janet eats 3 eggs for breakfast every morning. So, the number of eggs Janet eats for breakfast is 3.\n\n3. **Calculate how many eggs Janet bakes for her friends.**\n   Janet bakes 4 eggs for her friends every day. So, the number of eggs Janet bakes for her friends is 4.\n\n4. **Determine how many eggs are left for sale at the farmers' market.**\n   The number of eggs left for sale at the farmers' market is the total number of eggs minus the eggs eaten for breakfast and the eggs baked for her friends. So, the number of eggs left for sale is:\n   \\[\n   16 - 3 - 4 = 9\n   \\]\n\n5. **Calculate the revenue from selling the eggs at the farmers' market.**\n   Janet sells each remaining egg for $2. So, the revenue from selling the eggs is:\n   \\[\n   9 \\times 2 = 18\n   \\]\n\nTherefore, the amount Janet makes every day at the farmers' market is \\(\\boxed{18}\\).",
+      "extracted_answer": "18",
+      "is_correct": true,
+      "response_length": 2294,
+      "latency_ms": 26722.869634628296,
+      "timestamp": "2026-04-08T16:36:11.420488"
+    },
+    {
+      "problem_id": "gsm8k_1",
+      "model_name": "qwen2.5-math",
+      "prompt_method": "least_to_most",
+      "dataset": "gsm8k",
+      "raw_response": "[Decomposition]\nTo solve the problem of determining the total number of bolts of fiber the region takes, we can break it down into simpler sub-questions. Here is the step-by-step breakdown:\n\n1. **Determine the amount of white fiber needed:**\n   - The region takes 2 bolts of blue fiber.\n   - It takes half as much white fiber as blue fiber.\n   - Therefore, the amount of white fiber needed is:\n     \\[\n     \\frac{2}{2} = 1 \\text{ bolt}\n     \\]\n\n2. **Calculate the total amount of fiber:**\n   - The region takes 2 bolts of blue fiber.\n   - It takes 1 bolt of white fiber.\n   - Therefore, the total amount of fiber is:\n     \\[\n     2 + 1 = 3 \\text{ bolts}\n     \\]\n\nSo, the total number of bolts of fiber the region takes is \\(\\boxed{3}\\).\n\n[Solution]\nTo solve the given problem step by step, let's break it down into the sub-questions provided.\n\n1. **Determine the amount of white fiber needed:**\n   - The region takes 2 bolts of blue fiber.\n   - It takes half as much white fiber as blue fiber.\n   - Therefore, the amount of white fiber needed is:\n     \\[\n     \\frac{2}{2} = 1 \\text{ bolt}\n     \\]\n\n2. **Calculate the total amount of fiber:**\n   - The region takes 2 bolts of blue fiber.\n   - It takes 1 bolt of white fiber.\n   - Therefore, the total amount of fiber is:\n     \\[\n     2 + 1 = 3 \\text{ bolts}\n     \\]\n\nSo, the total number of bolts of fiber the region takes is \\(\\boxed{3}\\).",
+      "extracted_answer": "3",
+      "is_correct": true,
+      "response_length": 1389,
+      "latency_ms": 18337.520599365234,
+      "timestamp": "2026-04-08T16:36:29.761010"
+    },
+    {
+      "problem_id": "gsm8k_2",
+      "model_name": "qwen2.5-math",
+      "prompt_method": "least_to_most",
+      "dataset": "gsm8k",
+      "raw_response": "[Decomposition]\nTo determine the profit Josh made from flipping the house, we need to break down the problem into simpler sub-questions. Here is the step-by-step reasoning:\n\n1. **Calculate the total cost of the house:**\n   - The initial cost of the house is $80,000.\n   - The cost of repairs is $50,000.\n   - Therefore, the total cost is:\n     \\[\n     80,000 + 50,000 = 130,000\n     \\]\n\n2. **Calculate the increased value of the house:**\n   - The repairs increased the value of the house by 150%.\n   - To find the increased value, we calculate 150% of the initial cost of the house:\n     \\[\n     150\\% \\text{ of } 80,000 = 1.5 \\times 80,000 = 120,000\n     \\]\n\n3. **Calculate the new value of the house:**\n   - The new value of the house is the initial cost plus the increased value:\n     \\[\n     80,000 + 120,000 = 200,000\n     \\]\n\n4. **Calculate the profit:**\n   - The profit is the new value of the house minus the total cost:\n     \\[\n     200,000 - 130,000 = 70,000\n     \\]\n\nTherefore, the profit Josh made is \\(\\boxed{70000}\\).\n\n[Solution]\nLet's solve the problem step by step, following the sub-questions provided.\n\n1. **Calculate the total cost of the house:**\n   - Initial cost of the house: $80,000\n   - Cost of repairs: $50,000\n   - Total cost: \\(80,000 + 50,000 = 130,000\\)\n\n2. **Calculate the increased value of the house:**\n   - The repairs increased the value by 150% of the initial cost.\n   - Increased value: \\(150\\% \\text{ of } 80,000 = 1.5 \\times 80,000 = 120,000\\)\n\n3. **Calculate the new value of the house:**\n   - New value: Initial cost + Increased value\n   - New value: \\(80,000 + 120,000 = 200,000\\)\n\n4. **Calculate the profit:**\n   - Profit: New value - Total cost\n   - Profit: \\(200,000 - 130,000 = 70,000\\)\n\nTherefore, the profit Josh made is \\(\\boxed{70000}\\).",
+      "extracted_answer": "70000",
+      "is_correct": true,
+      "response_length": 1787,
+      "latency_ms": 42891.37864112854,
+      "timestamp": "2026-04-08T16:37:12.654895"
+    },
+    {
+      "problem_id": "gsm8k_0",
+      "model_name": "qwen2.5-math",
+      "prompt_method": "pvp",
+      "dataset": "gsm8k",
+      "raw_response": "To determine how much Janet makes every day at the farmers' market, we need to follow the steps outlined in the problem and verify each one carefully.\n\n1. **Calculate the total number of eggs laid per day:**\n   Janet's ducks lay 16 eggs per day.\n\n2. **Determine the number of eggs Janet eats for breakfast:**\n   Janet eats 3 eggs for breakfast every morning.\n   \\[\n   \\text{Eggs eaten for breakfast} = 3\n   \\]\n\n3. **Determine the number of eggs Janet bakes for her friends:**\n   Janet bakes 4 eggs for her friends every day.\n   \\[\n   \\text{Eggs baked for friends} = 4\n   \\]\n\n4. **Calculate the number of eggs remaining for sale:**\n   Subtract the eggs eaten for breakfast and the eggs baked for friends from the total number of eggs laid.\n   \\[\n   \\text{Eggs remaining for sale} = 16 - 3 - 4 = 9\n   \\]\n\n5. **Calculate the revenue from selling the remaining eggs:**\n   Each egg is sold for $2.\n   \\[\n   \\text{Revenue} = 9 \\times 2 = 18\n   \\]\n\nTherefore, Janet makes \\(\\boxed{18}\\) dollars every day at the farmers' market.",
+      "extracted_answer": "18",
+      "is_correct": true,
+      "response_length": 1021,
+      "latency_ms": 14579.205751419067,
+      "timestamp": "2026-04-08T16:37:27.238275"
+    },
+    {
+      "problem_id": "gsm8k_1",
+      "model_name": "qwen2.5-math",
+      "prompt_method": "pvp",
+      "dataset": "gsm8k",
+      "raw_response": "To solve the problem step by step, let's break it down and verify each step carefully.\n\n1. **Identify the amount of blue fiber used:**\n   The problem states that theboxed region takes 2 bolts of blue fiber.\n\n2. **Determine the amount of white fiber used:**\n   The problem also states that the amount of white fiber used is half the amount of blue fiber. Since the blue fiber is 2 bolts, the white fiber is:\n   \\[\n   \\frac{2}{2} = 1 \\text{ bolt}\n   \\]\n\n3. **Calculate the total amount of fiber used:**\n   The total amount of fiber used is the sum of the blue fiber and the white fiber:\n   \\[\n   2 + 1 = 3 \\text{ bolts}\n   \\]\n\n4. **Verify the solution:**\n   - The amount of blue fiber is correctly identified as 2 bolts.\n   - The amount of white fiber is correctly calculated as half of the blue fiber, which is 1 bolt.\n   - The total amount of fiber is the sum of the blue and white fiber, which is 3 bolts.\n\nSince all steps are logically correct and there are no arithmetic errors, the final answer is:\n\\[\n\\boxed{3}\n\\]",
+      "extracted_answer": "3",
+      "is_correct": true,
+      "response_length": 1018,
+      "latency_ms": 11968.889951705933,
+      "timestamp": "2026-04-08T16:37:39.210664"
+    },
+    {
+      "problem_id": "gsm8k_2",
+      "model_name": "qwen2.5-math",
+      "prompt_method": "pvp",
+      "dataset": "gsm8k",
+      "raw_response": "To determine Josh's profit, we need to follow the steps carefully and verify each one.\n\n1. **Initial Cost of the House:**\n   Josh buys the house for $80,000.\n\n2. **Cost of Repairs:**\n   He spends an additional $50,000 on repairs.\n\n3. **Total Initial Investment:**\n   The total initial investment is the sum of the purchase price and the repair costs:\n   \\[\n   80,000 + 50,000 = 130,000\n   \\]\n\n4. **Increase in Value due to Flipping:**\n   The value of the house increases by 150% after flipping. To find the new value, we calculate 150% of the initial investment and add it to the initial investment:\n   \\[\n   150\\% \\text{ of } 130,000 = 1.5 \\times 130,000 = 195,000\n   \\]\n   Adding this to the initial investment:\n   \\[\n   130,000 + 195,000 = 325,000\n   \\]\n\n5. **Profit Calculation:**\n   The profit is the difference between the final value of the house and the total initial investment:\n   \\[\n   325,000 - 130,000 = 195,000\n   \\]\n\nThus, Josh's profit is \\(\\boxed{195000}\\).",
+      "extracted_answer": "195000",
+      "is_correct": false,
+      "response_length": 974,
+      "latency_ms": 15965.102434158325,
+      "timestamp": "2026-04-08T16:37:55.179272"
+    }
+  ],
+  "summary": {
+    "qwen2.5-math__cot__gsm8k": {
+      "model": "qwen2.5-math",
+      "method": "cot",
+      "dataset": "gsm8k",
+      "accuracy": 1.0,
+      "correct": 3,
+      "total": 3,
+      "extract_success_rate": 1.0
+    },
+    "qwen2.5-math__self_consistency__gsm8k": {
+      "model": "qwen2.5-math",
+      "method": "self_consistency",
+      "dataset": "gsm8k",
+      "accuracy": 1.0,
+      "correct": 3,
+      "total": 3,
+      "extract_success_rate": 1.0
+    },
+    "qwen2.5-math__self_refine__gsm8k": {
+      "model": "qwen2.5-math",
+      "method": "self_refine",
+      "dataset": "gsm8k",
+      "accuracy": 1.0,
+      "correct": 3,
+      "total": 3,
+      "extract_success_rate": 1.0
+    },
+    "qwen2.5-math__least_to_most__gsm8k": {
+      "model": "qwen2.5-math",
+      "method": "least_to_most",
+      "dataset": "gsm8k",
+      "accuracy": 1.0,
+      "correct": 3,
+      "total": 3,
+      "extract_success_rate": 1.0
+    },
+    "qwen2.5-math__pvp__gsm8k": {
+      "model": "qwen2.5-math",
+      "method": "pvp",
+      "dataset": "gsm8k",
+      "accuracy": 0.6666666666666666,
+      "correct": 2,
+      "total": 3,
+      "extract_success_rate": 1.0
+    }
+  },
+  "total_problems": 15,
+  "total_correct": 14,
+  "overall_accuracy": 0.9333333333333333,
+  "completed_at": "2026-04-08T16:37:55.182289"
+}

@@ -1,0 +1,12 @@
+{
+  "problem_id": "gsm8k_3",
+  "model_name": "qwen2.5-math",
+  "prompt_method": "cot",
+  "dataset": "gsm8k",
+  "raw_response": "To determine the total number of meters James runs in a week, we need to follow these steps:\n\n1. Identify the number of sprints James runs each week.\n2. Identify the distance of each sprint.\n3. Multiply the number of sprints by the distance of each sprint to find the total distance run in a week.\n\nStep 1: James runs 3 sprints each week.\nStep 2: Each sprint is 60 meters.\nStep 3: Calculate the total distance run in a week by multiplying the number of sprints by the distance of each sprint.\n\n\\[\n3 \\text{ sprints/week} \\times 60 \\text{ meters/sprint} = 180 \\text{ meters/week}\n\\]\n\nSo, the total number of meters James runs in a week is \\boxed{180}.",
+  "extracted_answer": "180",
+  "is_correct": false,
+  "response_length": 649,
+  "latency_ms": 9366.970777511597,
+  "timestamp": "2026-04-08T16:40:09.949437"
+}

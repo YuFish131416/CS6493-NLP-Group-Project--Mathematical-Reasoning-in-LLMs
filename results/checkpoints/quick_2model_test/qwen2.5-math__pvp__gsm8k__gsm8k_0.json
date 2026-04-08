@@ -1,0 +1,12 @@
+{
+  "problem_id": "gsm8k_0",
+  "model_name": "qwen2.5-math",
+  "prompt_method": "pvp",
+  "dataset": "gsm8k",
+  "raw_response": "To determine how much Janet makes every day at the farmers' market, we need to follow the steps outlined in the problem and verify each one carefully.\n\n1. **Calculate the number of eggs left after eating and baking muffins:**\n   - Janet's ducks lay 16 eggs per day.\n   - She eats 3 eggs for breakfast every morning.\n   - She bakes 4 eggs for her friends every day.\n   - The number of eggs left for the farmers' market is calculated as follows:\n     \\[\n     16 - 3 - 4 = 9\n     \\]\n   So, Janet has 9 eggs left each day to sell at the farmers' market.\n\n2. **Calculate the revenue from selling the eggs:**\n   - Each egg is sold for $2.\n   - The revenue from selling 9 eggs is:\n     \\[\n     9 \\times 2 = 18\n     \\]\n   So, Janet makes $18 every day at the farmers' market.\n\nThe final answer is:\n\\[\n\\boxed{18}\n\\]",
+  "extracted_answer": "18",
+  "is_correct": true,
+  "response_length": 806,
+  "latency_ms": 34738.41953277588,
+  "timestamp": "2026-04-08T16:51:14.040451"
+}

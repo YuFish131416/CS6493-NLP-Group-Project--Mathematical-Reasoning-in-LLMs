@@ -1,0 +1,12 @@
+{
+  "problem_id": "math500_0",
+  "model_name": "qwen2.5-math",
+  "prompt_method": "pvp",
+  "dataset": "math500",
+  "raw_response": "To convert the point \\((0,3)\\) from rectangular coordinates to polar coordinates, we need to find the values of \\(r\\) and \\(\\theta\\). The formulas for converting from rectangular coordinates \\((x, y)\\) to polar coordinates \\((r, \\theta)\\) are:\n\n\\[ r = \\sqrt{x^2 + y^2} \\]\n\\[ \\theta = \\tan^{-1}\\left(\\frac{y}{x}\\right) \\]\n\nHowever, we need to be careful with the value of \\(\\theta\\) because the arctangent function only gives values between \\(-\\frac{\\pi}{2}\\) and \\(\\frac{\\pi}{2}\\). Since the point \\((0,3)\\) is on the positive \\(y\\)-axis, \\(\\theta\\) should be \\(\\frac{\\pi}{2}\\).\n\nLet's go through the steps:\n\n1. Calculate \\(r\\):\n\\[ r = \\sqrt{0^2 + 3^2} = \\sqrt{9} = 3 \\]\n\n2. Calculate \\(\\theta\\):\nSince the point is on the positive \\(y\\)-axis, \\(\\theta = \\frac{\\pi}{2}\\).\n\nSo, the polar coordinates are \\((3, \\frac{\\pi}{2})\\).\n\nThe final answer is:\n\\[\n\\boxed{(3, \\frac{\\pi}{2})}\n\\]",
+  "extracted_answer": "(3, \\frac{\\pi}{2})",
+  "is_correct": false,
+  "response_length": 881,
+  "latency_ms": 12306.711912155151,
+  "timestamp": "2026-04-08T18:43:15.465619"
+}

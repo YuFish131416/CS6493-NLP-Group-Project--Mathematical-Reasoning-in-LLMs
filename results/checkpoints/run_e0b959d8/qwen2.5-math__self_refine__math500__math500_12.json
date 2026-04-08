@@ -1,0 +1,12 @@
+{
+  "problem_id": "math500_12",
+  "model_name": "qwen2.5-math",
+  "prompt_method": "self_refine",
+  "dataset": "math500",
+  "raw_response": "To solve the given problem, we need to follow these steps:\n\n1. Determine the sum of the proper divisors of 284.\n2. Find the proper divisors of the sum obtained in step 1.\n3. Calculate the sum of these proper divisors.\n\n**Step 1: Determine the sum of the proper divisors of 284.**\n\nFirst, we find the proper divisors of 284. A proper divisor of a number is a positive divisor of that number excluding the number itself. We start by finding all the divisors of 284.\n\nThe prime factorization of 284 is:\n\\[ 284 = 2^2 \\times 71 \\]\n\nUsing the prime factorization, we can list all the divisors of 284:\n\\[ 1, 2, 4, 71, 142, 284 \\]\n\nThe proper divisors of 284 are all the divisors except 284 itself:\n\\[ 1, 2, 4, 71, 142 \\]\n\nNow, we sum these proper divisors:\n\\[ 1 + 2 + 4 + 71 + 142 = 220 \\]\n\nSo, the sum of the proper divisors of 284 is 220.\n\n**Step 2: Find the proper divisors of 220.**\n\nNext, we find the proper divisors of 220. We start by finding all the divisors of 220.\n\nThe prime factorization of 220 is:\n\\[ 220 = 2^2 \\times 5 \\times 11 \\]\n\nUsing the prime factorization, we can list all the divisors of 220:\n\\[ 1, 2, 4, 5, 10, 11, 20, 22, 44, 55, 110, 220 \\]\n\nThe proper divisors of 220 are all the divisors except 220 itself:\n\\[ 1, 2, 4, 5, 10, 11, 20, 22, 44, 55, 110 \\]\n\n**Step 3: Calculate the sum of these proper divisors.**\n\nNow, we sum these proper divisors:\n\\[ 1 + 2 + 4 + 5 + 10 + 11 + 20 + 22 + 44 + 55 + 110 = 284 \\]\n\nSo, the sum of the proper divisors of 220 is 284.\n\nTherefore, the final answer is:\n\\[ \\boxed{284} \\]",
+  "extracted_answer": "284",
+  "is_correct": true,
+  "response_length": 1529,
+  "latency_ms": 123532.27305412292,
+  "timestamp": "2026-04-08T18:16:24.912309"
+}

@@ -1,0 +1,118 @@
+{
+  "run_id": "quick_2model_test",
+  "config": {
+    "run_id": "quick_2model_test",
+    "models": [
+      "qwen2.5-math",
+      "deepseek-r1"
+    ],
+    "prompt_methods": [
+      "cot",
+      "pvp"
+    ],
+    "datasets": [
+      "gsm8k"
+    ],
+    "sample_size": 2,
+    "temperature": 0.0,
+    "max_tokens": 2048,
+    "seed": 42,
+    "n_samples": 2,
+    "max_refine_rounds": 1,
+    "checkpoint_dir": "results/checkpoints",
+    "output_dir": "results",
+    "created_at": "2026-04-08T16:52:21"
+  },
+  "responses": [
+    {
+      "problem_id": "gsm8k_0",
+      "model_name": "deepseek-r1",
+      "prompt_method": "cot",
+      "dataset": "gsm8k",
+      "raw_response": "<think>\nOkay, so I need to figure out how much money Janet makes every day at the farmers' market. Let me break down the problem step by step.\n\nFirst, Janet's ducks lay 16 eggs per day. That's the total number of eggs available each day. Now, she uses some of these eggs for breakfast and some for baking muffins. The rest are sold at $2 each at the farmers' market. I need to find out how many eggs are left after she uses some for breakfast and some for muffins, and then multiply that by $2 to get the total earnings.\n\nLet me list out the given information:\n\n- Total eggs per day: 16\n- Breakfast: 3 eggs per day\n- Muffins: 4 eggs per day\n- Selling price per egg: $2\n\nSo, first, I'll calculate how many eggs Janet uses for breakfast and muffins. That should be 3 (for breakfast) plus 4 (for muffins), which equals 7 eggs used daily.\n\nNow, subtracting the used eggs from the total eggs gives me the number of eggs left for sale. So, 16 total eggs minus 7 used eggs equals 9 eggs left.\n\nNext, since each of these 9 eggs is sold for $2, I'll multiply 9 by $2 to find the total earnings. 9 times 2 is 18, so she makes $18 every day at the farmers' market.\n\nWait, let me double-check my calculations to make sure I didn't make a mistake. \n\nTotal eggs: 16\nUsed for breakfast: 3\nUsed for muffins: 4\nTotal used: 3 + 4 = 7\nLeftover: 16 - 7 = 9\nEarnings: 9 * $2 = $18\n\nYes, that seems correct. So, Janet makes $18 every day at the farmers' market.\n</think>\n\nTo determine how much Janet makes every day at the farmers' market, follow these steps:\n\n1. **Calculate the total number of eggs laid per day:**\n   \\[\n   16 \\text{ eggs/day}\n   \\]\n\n2. **Determine the number of eggs used for breakfast:**\n   \\[\n   3 \\text{ eggs/day}\n   \\]\n\n3. **Determine the number of eggs used for baking muffins:**\n   \\[\n   4 \\text{ eggs/day}\n   \\]\n\n4. **Calculate the total number of eggs used daily:**\n   \\[\n   3 + 4 = 7 \\text{ eggs/day}\n   \\]\n\n5. **Find the number of eggs left for sale:**\n   \\[\n   16 - 7 = 9 \\text{ eggs/day}\n   \\]\n\n6. **Calculate the total earnings from selling the remaining eggs:**\n   \\[\n   9 \\text{ eggs} \\times \\$2/\\text{egg} = \\$18\n   \\]\n\n**Final Answer:**  \n\\[\n\\boxed{18}\n\\]",
+      "extracted_answer": "18",
+      "is_correct": true,
+      "response_length": 2170,
+      "latency_ms": 112579.05721664429,
+      "timestamp": "2026-04-08T16:54:22.465597"
+    },
+    {
+      "problem_id": "gsm8k_1",
+      "model_name": "deepseek-r1",
+      "prompt_method": "cot",
+      "dataset": "gsm8k",
+      "raw_response": "<think>\nOkay, so I have this problem here: A robe takes 2 bolts of blue fiber and half that much white fiber. How many bolts in total does it take? Hmm, let me try to figure this out step by step.\n\nFirst, I need to understand what the problem is asking. It's about figuring out the total number of bolts a robe uses, considering both blue and white fiber. The problem gives me the number of blue fiber bolts and tells me how many white fiber bolts that is. So, I think I need to add the blue and white fiber bolts together to get the total.\n\nLet me break it down. The problem says the robe takes 2 bolts of blue fiber. That's straightforward. Now, it says half that much white fiber. So, if blue fiber is 2, white fiber must be half of that. Let me calculate that. Half of 2 is 1, right? So, white fiber is 1 bolt.\n\nNow, to find the total number of bolts, I need to add the blue and white fiber bolts together. That would be 2 (blue) plus 1 (white). Let me add those: 2 + 1 equals 3. So, the total number of bolts the robe takes is 3.\n\nWait, let me double-check to make sure I didn't make a mistake. Blue is 2, white is half of that, which is 1. Adding them gives 3. Yeah, that seems right. I don't think I missed anything here. The problem is pretty straightforward once I break it down into parts.\n</think>\n\nTo determine the total number of bolts the robe takes, follow these steps:\n\n1. **Identify the number of blue fiber bolts**: The robe takes 2 bolts of blue fiber.\n\n2. **Calculate the number of white fiber bolts**: The problem states that the robe takes half as many white fiber bolts as blue fiber. Therefore, half of 2 is:\n   \\[\n   \\frac{2}{2} = 1\n   \\]\n   So, the robe takes 1 bolt of white fiber.\n\n3. **Add the blue and white fiber bolts together** to find the total:\n   \\[\n   2 \\text{ (blue)} + 1 \\text{ (white)} = 3\n   \\]\n\n**Final Answer:** The robe takes a total of 3 bolts.\n\n\\[\n\\boxed{3}\n\\]",
+      "extracted_answer": "3",
+      "is_correct": true,
+      "response_length": 1906,
+      "latency_ms": 33292.32621192932,
+      "timestamp": "2026-04-08T16:54:55.761321"
+    },
+    {
+      "problem_id": "gsm8k_0",
+      "model_name": "deepseek-r1",
+      "prompt_method": "pvp",
+      "dataset": "gsm8k",
+      "raw_response": "<think>\nOkay, so I need to figure out how much Janet makes every day at the farmers' market. Let me break this down step by step.\n\nFirst, Janet's ducks lay 16 eggs per day. That's straightforward. So, total eggs = 16.\n\nNow, she eats three eggs for breakfast every morning. Since she does this every day, that means she uses 3 eggs per day for breakfast. So, breakfast consumption = 3 eggs.\n\nNext, she bakes muffins for her friends every day with four eggs. So, she uses 4 eggs for baking. That's muffin eggs = 4 eggs.\n\nNow, I need to find out how many eggs she has left after eating breakfast and baking. So, total eggs = 16. Subtract the breakfast and muffin eggs: 16 - 3 - 4. Let me calculate that: 16 - 3 is 13, and 13 - 4 is 9. So, she has 9 eggs left after these two days.\n\nShe sells the remaining eggs at $2 per fresh duck egg. So, the revenue from selling the eggs would be 9 eggs * $2 per egg. Let me compute that: 9 * 2 = 18. So, she makes $18 every day at the farmers' market.\n\nWait, let me double-check each step to make sure I didn't make any mistakes. \n\n1. Total eggs: 16. Correct.\n2. Breakfast: 3 eggs. Correct.\n3. Muffins: 4 eggs. Correct.\n4. Remaining eggs: 16 - 3 - 4 = 9. Correct.\n5. Revenue: 9 * 2 = 18. Correct.\n\nEverything seems to add up. I don't see any arithmetic errors here. So, I'm confident that Janet makes $18 every day at the farmers' market.\n</think>\n\nTo determine how much Janet makes at the farmers' market, follow these steps:\n\n1. **Total Eggs per Day**: 16 eggs.\n\n2. **Breakfast Consumption**: 3 eggs per day.\n\n3. **Muffin Consumption**: 4 eggs per day.\n\n4. **Remaining Eggs**: Subtract breakfast and muffin consumption from total eggs.\n   - Remaining = 16 - 3 - 4 = 9 eggs.\n\n5. **Revenue from Selling Eggs**: Multiply the remaining eggs by the selling price per egg.\n   - Revenue = 9 eggs * $2/egg = $18.\n\n**Final Answer**: Janet makes $\\boxed{18}$ dollars every day at the farmers' market.",
+      "extracted_answer": "18",
+      "is_correct": true,
+      "response_length": 1927,
+      "latency_ms": 28934.42177772522,
+      "timestamp": "2026-04-08T16:55:24.699767"
+    },
+    {
+      "problem_id": "gsm8k_1",
+      "model_name": "deepseek-r1",
+      "prompt_method": "pvp",
+      "dataset": "gsm8k",
+      "raw_response": "<think>\nOkay, so I need to figure out how many bolts of fiber a robe takes. The problem says it takes 2 bolts of blue fiber and half that much white fiber. Hmm, let me break this down step by step.\n\nFirst, I know that the total number of bolts is the sum of blue fiber and white fiber. So, I should find out how many white fiber bolts there are and then add them to the blue ones.\n\nThe problem states that the robe takes 2 bolts of blue fiber. That's straightforward. Now, for the white fiber, it says it takes half that much. So, I need to calculate half of 2 bolts. \n\nHalf of 2 is 1, right? Because 2 divided by 2 equals 1. So, the white fiber part is 1 bolt.\n\nNow, to find the total number of bolts, I add the blue and white fiber together. That would be 2 (blue) plus 1 (white) equals 3 bolts in total.\n\nWait, let me double-check to make sure I didn't make a mistake. Blue is 2, white is half of that, which is 1. Adding them gives 3. Yeah, that seems right.\n\nI don't think there are any arithmetic errors here. The steps are clear: identify each part, calculate the white fiber, then sum them up. Everything adds up correctly.\n</think>\n\nTo determine the total number of bolts of fiber a robe takes, follow these steps:\n\n1. **Identify the number of blue fiber bolts:**\n   - The robe takes 2 bolts of blue fiber.\n\n2. **Calculate the number of white fiber bolts:**\n   - The problem states that the robe takes half as many white fiber bolts as blue fiber.\n   - Half of 2 is \\( \\frac{2}{2} = 1 \\).\n   - Therefore, the robe takes 1 bolt of white fiber.\n\n3. **Sum the blue and white fiber bolts to find the total:**\n   - Blue fiber: 2 bolts\n   - White fiber: 1 bolt\n   - Total: \\( 2 + 1 = 3 \\) bolts\n\n**Final Answer:**\n\\boxed{3}",
+      "extracted_answer": "3",
+      "is_correct": true,
+      "response_length": 1726,
+      "latency_ms": 22562.056064605713,
+      "timestamp": "2026-04-08T16:55:47.264890"
+    }
+  ],
+  "summary": {
+    "qwen2.5-math__cot__gsm8k": {
+      "model": "qwen2.5-math",
+      "method": "cot",
+      "dataset": "gsm8k",
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 2,
+      "extract_success_rate": 0.0
+    },
+    "qwen2.5-math__pvp__gsm8k": {
+      "model": "qwen2.5-math",
+      "method": "pvp",
+      "dataset": "gsm8k",
+      "accuracy": 0.0,
+      "correct": 0,
+      "total": 2,
+      "extract_success_rate": 0.0
+    },
+    "deepseek-r1__cot__gsm8k": {
+      "model": "deepseek-r1",
+      "method": "cot",
+      "dataset": "gsm8k",
+      "accuracy": 1.0,
+      "correct": 2,
+      "total": 2,
+      "extract_success_rate": 1.0
+    },
+    "deepseek-r1__pvp__gsm8k": {
+      "model": "deepseek-r1",
+      "method": "pvp",
+      "dataset": "gsm8k",
+      "accuracy": 1.0,
+      "correct": 2,
+      "total": 2,
+      "extract_success_rate": 1.0
+    }
+  },
+  "total_problems": 4,
+  "total_correct": 4,
+  "overall_accuracy": 1.0,
+  "completed_at": "2026-04-08T16:55:47.266887"
+}

@@ -1,0 +1,12 @@
+{
+  "problem_id": "math500_16",
+  "model_name": "qwen2.5-math",
+  "prompt_method": "pvp",
+  "dataset": "math500",
+  "raw_response": "To solve the problem \\(1 - 2 + 3 - 4 + 5 - \\dots + 99 - 100\\), we will follow the steps outlined and verify each part carefully.\n\n### Step 1: Break the problem into clear reasoning steps\n\nThe given series is:\n\\[ 1 - 2 + 3 - 4 + 5 - \\dots + 99 - 100 \\]\n\nWe can group the terms in pairs to simplify the calculation:\n\\[ (1 - 2) + (3 - 4) + (5 - 6) + \\dots + (99 - 100) \\]\n\n### Step 2: Verify each step\n\n#### Step 2.1: Verify the pairing\nEach pair of terms is of the form \\( (2k-1) - 2k \\) for \\( k = 1, 2, \\ldots, 50 \\).\n\nLet's verify a few pairs:\n- For \\( k = 1 \\): \\( (2 \\cdot 1 - 1) - 2 \\cdot 1 = 1 - 2 = -1 \\)\n- For \\( k = 2 \\): \\( (2 \\cdot 2 - 1) - 2 \\cdot 2 = 3 - 4 = -1 \\)\n- For \\( k = 3 \\): \\( (2 \\cdot 3 - 1) - 2 \\cdot 3 = 5 - 6 = -1 \\)\n\nEach pair sums to \\(-1\\).\n\n#### Step 2.2: Count the number of pairs\nThere are 100 terms in total, and each pair consists of 2 terms. Therefore, there are:\n\\[ \\frac{100}{2} = 50 \\text{ pairs} \\]\n\n#### Step 2.3: Calculate the total sum\nSince each pair sums to \\(-1\\) and there are 50 pairs, the total sum is:\n\\[ 50 \\times (-1) = -50 \\]\n\n### Step 3: Perform a final review\n\nWe have verified that each pair sums to \\(-1\\) and there are 50 pairs. Therefore, the total sum of the series is:\n\\[ \\boxed{-50} \\]",
+  "extracted_answer": "-50",
+  "is_correct": true,
+  "response_length": 1246,
+  "latency_ms": 19641.021728515625,
+  "timestamp": "2026-04-08T18:48:44.157922"
+}

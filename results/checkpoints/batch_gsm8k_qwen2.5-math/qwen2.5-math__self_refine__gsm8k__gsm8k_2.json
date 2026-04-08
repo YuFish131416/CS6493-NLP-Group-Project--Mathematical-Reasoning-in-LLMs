@@ -1,0 +1,12 @@
+{
+  "problem_id": "gsm8k_2",
+  "model_name": "qwen2.5-math",
+  "prompt_method": "self_refine",
+  "dataset": "gsm8k",
+  "raw_response": "The final answer is \\(\\boxed{70000}\\).",
+  "extracted_answer": "70000",
+  "is_correct": true,
+  "response_length": 38,
+  "latency_ms": 166835.9522819519,
+  "timestamp": "2026-04-08T16:53:37.700973"
+}

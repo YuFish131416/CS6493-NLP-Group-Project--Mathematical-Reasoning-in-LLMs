@@ -1,0 +1,12 @@
+{
+  "problem_id": "gsm8k_2",
+  "model_name": "qwen2.5-math",
+  "prompt_method": "pvp",
+  "dataset": "gsm8k",
+  "raw_response": "To determine Josh's profit, we need to follow the steps carefully and verify each one.\n\n1. **Initial Cost of the House:**\n   Josh buys the house for $80,000.\n\n2. **Cost of Repairs:**\n   He spends an additional $50,000 on repairs.\n\n3. **Total Initial Investment:**\n   The total initial investment is the sum of the purchase price and the repair costs:\n   \\[\n   80,000 + 50,000 = 130,000\n   \\]\n\n4. **Increase in Value due to Flipping:**\n   The value of the house increases by 150% after flipping. To find the new value, we calculate 150% of the initial investment and add it to the initial investment:\n   \\[\n   150\\% \\text{ of } 130,000 = 1.5 \\times 130,000 = 195,000\n   \\]\n   Adding this to the initial investment:\n   \\[\n   130,000 + 195,000 = 325,000\n   \\]\n\n5. **Profit Calculation:**\n   The profit is the difference between the final value of the house and the total initial investment:\n   \\[\n   325,000 - 130,000 = 195,000\n   \\]\n\nThus, Josh's profit is \\(\\boxed{195000}\\).",
+  "extracted_answer": "195000",
+  "is_correct": false,
+  "response_length": 974,
+  "latency_ms": 15965.102434158325,
+  "timestamp": "2026-04-08T16:37:55.179272"
+}

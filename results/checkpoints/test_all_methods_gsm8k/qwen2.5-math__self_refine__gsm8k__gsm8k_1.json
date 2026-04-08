@@ -1,0 +1,12 @@
+{
+  "problem_id": "gsm8k_1",
+  "model_name": "qwen2.5-math",
+  "prompt_method": "self_refine",
+  "dataset": "gsm8k",
+  "raw_response": "Theboxed takes 3 bolts of fiber in total.",
+  "extracted_answer": "3",
+  "is_correct": true,
+  "response_length": 41,
+  "latency_ms": 18709.52296257019,
+  "timestamp": "2026-04-08T16:34:54.432043"
+}

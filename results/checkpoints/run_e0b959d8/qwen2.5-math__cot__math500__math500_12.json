@@ -1,0 +1,12 @@
+{
+  "problem_id": "math500_12",
+  "model_name": "qwen2.5-math",
+  "prompt_method": "cot",
+  "dataset": "math500",
+  "raw_response": "To solve the problem, we need to follow these steps:\n\n1. Determine the sum of the proper divisors of 284.\n2. Find the proper divisors of the sum obtained in step 1.\n3. Calculate the sum of these proper divisors.\n\n**Step 1: Determine the sum of the proper divisors of 284.**\n\nFirst, we find all the divisors of 284. The divisors of 284 are 1, 2, 4, 71, 142, and 284. The proper divisors of 284 are all the divisors except 284 itself, so they are 1, 2, 4, 71, and 142. We sum these proper divisors:\n\n\\[1 + 2 + 4 + 71 + 142 = 220\\]\n\nSo, the sum of the proper divisors of 284 is 220.\n\n**Step 2: Find the proper divisors of 220.**\n\nNext, we find all the divisors of 220. The divisors of 220 are 1, 2, 4, 5, 10, 11, 20, 22, 44, 55, 110, and 220. The proper divisors of 220 are all the divisors except 220 itself, so they are 1, 2, 4, 5, 10, 11, 20, 22, 44, 55, and 110. We sum these proper divisors:\n\n\\[1 + 2 + 4 + 5 + 10 + 11 + 20 + 22 + 44 + 55 + 110 = 344\\]\n\nSo, the sum of the proper divisors of 220 is 344.\n\n**Step 3: The final answer is the sum of the proper divisors of 220, which is 344.**\n\nThus, the final answer is:\n\n\\[\\boxed{344}\\]",
+  "extracted_answer": "344",
+  "is_correct": false,
+  "response_length": 1136,
+  "latency_ms": 21953.338146209717,
+  "timestamp": "2026-04-08T17:08:25.201858"
+}

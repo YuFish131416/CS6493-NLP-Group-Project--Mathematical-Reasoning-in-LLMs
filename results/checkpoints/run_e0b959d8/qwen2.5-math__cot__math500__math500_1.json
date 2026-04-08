@@ -1,0 +1,12 @@
+{
+  "problem_id": "math500_1",
+  "model_name": "qwen2.5-math",
+  "prompt_method": "cot",
+  "dataset": "math500",
+  "raw_response": "To find a way to write the double sum \\(\\sum_{j = 1}^\\infty \\sum_{k = 1}^\\infty \\frac{1}{(j + k)^3}\\) in terms of \\(p\\) and \\(q\\), we start by considering the inner sum and then the outer sum.\n\nFirst, let's rewrite the double sum in a more convenient form. We can change the order of summation. Instead of summing over \\(j\\) and \\(k\\) separately, we can sum over the sum \\(n = j + k\\). For each fixed \\(n\\), \\(j\\) can range from 1 to \\(n-1\\) and \\(k = n - j\\). Therefore, the double sum can be rewritten as:\n\n\\[\n\\sum_{j = 1}^\\infty \\sum_{k = 1}^\\infty \\frac{1}{(j + k)^3} = \\sum_{n = 2}^\\infty \\sum_{j = 1}^{n-1} \\frac{1}{n^3}.\n\\]\n\nThe inner sum \\(\\sum_{j = 1}^{n-1} \\frac{1}{n^3}\\) is simply \\((n-1) \\cdot \\frac{1}{n^3} = \\frac{n-1}{n^3}\\). So the double sum becomes:\n\n\\[\n\\sum_{n = 2}^\\infty \\frac{n-1}{n^3} = \\sum_{n = 2}^\\infty \\left( \\frac{1}{n^2} - \\frac{1}{n^3} \\right).\n\\]\n\nWe can split this into two separate sums:\n\n\\[\n\\sum_{n = 2}^\\infty \\frac{1}{n^2} - \\sum_{n = 2}^\\infty \\frac{1}{n^3}.\n\\]\n\nNotice that \\(\\sum_{n = 2}^\\infty \\frac{1}{n^2} = p - 1\\) and \\(\\sum_{n = 2}^\\infty \\frac{1}{n^3} = q - 1\\). Therefore, the expression becomes:\n\n\\[\n(p - 1) - (q - 1) = p - q.\n\\]\n\nThus, the value of the double sum is:\n\n\\[\n\\boxed{p - q}.\n\\]",
+  "extracted_answer": "p - q",
+  "is_correct": true,
+  "response_length": 1240,
+  "latency_ms": 34471.755027770996,
+  "timestamp": "2026-04-08T17:04:11.414752"
+}

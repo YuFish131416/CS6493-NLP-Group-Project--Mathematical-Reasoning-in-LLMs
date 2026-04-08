@@ -1,0 +1,12 @@
+{
+  "problem_id": "gsm8k_0",
+  "model_name": "qwen2.5-math",
+  "prompt_method": "self_refine",
+  "dataset": "gsm8k",
+  "raw_response": "The solution provided is correct. There are no errors in reasoning, calculation, or logical flow. The problem is solved step by step accurately, and the final answer is correct. Therefore, no further review is needed. The final answer is \\(\\boxed{18}\\).",
+  "extracted_answer": "18",
+  "is_correct": true,
+  "response_length": 253,
+  "latency_ms": 61421.52714729309,
+  "timestamp": "2026-04-08T16:50:07.864940"
+}

@@ -1,0 +1,12 @@
+{
+  "problem_id": "math500_15",
+  "model_name": "qwen2.5-math",
+  "prompt_method": "self_refine",
+  "dataset": "math500",
+  "raw_response": "To solve for \\( w \\), we need to rotate the complex number \\( z = 2 + \\sqrt{2} - (3 + 3\\sqrt{2})i \\) around the point \\( c = 2 - 3i \\) by an angle of \\( \\frac{\\pi}{4} \\) counter-clockwise. Let's go through the steps in detail.\n\n1. **Express \\( z \\) and \\( c \\) in terms of their real and imaginary parts:**\n   \\[\n   z = 2 + \\sqrt{2} - (3 + 3\\sqrt{2})i\n   \\]\n   \\[\n   c = 2 - 3i\n   \\]\n\n2. **Translate \\( z \\) so that \\( c \\) is at the origin:**\n   \\[\n   z' = z - c = (2 + \\sqrt{2} - (3 + 3\\sqrt{2})i) - (2 - 3i) = \\sqrt{2} - (3 + 3\\sqrt{2} - 3)i = \\sqrt{2} - 3\\sqrt{2}i\n   \\]\n\n3. **Rotate \\( z' \\) by \\( \\frac{\\pi}{4} \\) counter-clockwise:**\n   To rotate a complex number \\( a + bi \\) by \\( \\frac{\\pi}{4} \\), we multiply it by \\( e^{i\\frac{\\pi}{4}} = \\frac{\\sqrt{2}}{2} + i\\frac{\\sqrt{2}}{2} \\).\n   \\[\n   z'' = z' \\left( \\frac{\\sqrt{2}}{2} + i\\frac{\\sqrt{2}}{2} \\right) = (\\sqrt{2} - 3\\sqrt{2}i) \\left( \\frac{\\sqrt{2}}{2} + i\\frac{\\sqrt{2}}{2} \\right)\n   \\]\n   \\[\n   z'' = \\sqrt{2} \\cdot \\frac{\\sqrt{2}}{2} + \\sqrt{2} \\cdot i\\frac{\\sqrt{2}}{2} - 3\\sqrt{2}i \\cdot \\frac{\\sqrt{2}}{2} - 3\\sqrt{2}i \\cdot i\\frac{\\sqrt{2}}{2}\n   \\]\n   \\[\n   z'' = 1 + i - 3i + 3 = 4 - 2i\n   \\]\n\n4. **Translate \\( z'' \\) back to the original position:**\n   \\[\n   w = z'' + c = (4 - 2i) + (2 - 3i) = 6 - 5i\n   \\]\n\nThus, the result of rotating \\( z \\) around \\( c \\) by \\( \\frac{\\pi}{4} \\) counter-clockwise is \\( \\boxed{6 - 5i} \\).",
+  "extracted_answer": "6 - 5i",
+  "is_correct": true,
+  "response_length": 1406,
+  "latency_ms": 99322.0682144165,
+  "timestamp": "2026-04-08T18:19:17.921196"
+}

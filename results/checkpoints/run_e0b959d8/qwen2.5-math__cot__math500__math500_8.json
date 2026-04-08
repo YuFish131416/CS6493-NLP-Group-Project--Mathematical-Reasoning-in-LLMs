@@ -1,0 +1,12 @@
+{
+  "problem_id": "math500_8",
+  "model_name": "qwen2.5-math",
+  "prompt_method": "cot",
+  "dataset": "math500",
+  "raw_response": "To find the distance between the points \\((2, -6)\\) and \\((-4, 3)\\), we use the distance formula. The distance formula for two points \\((x_1, y_1)\\) and \\((x_2, y_2)\\) in a coordinate plane is given by:\n\n\\[\nd = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\n\\]\n\nHere, the coordinates of the first point are \\((x_1, y_1) = (2, -6)\\) and the coordinates of the second point are \\((x_2, y_2) = (-4, 3)\\). Substituting these values into the distance formula, we get:\n\n\\[\nd = \\sqrt{((-4) - 2)^2 + (3 - (-6))^2}\n\\]\n\nFirst, we simplify the expressions inside the parentheses:\n\n\\[\n(-4) - 2 = -6\n\\]\n\\[\n3 - (-6) = 3 + 6 = 9\n\\]\n\nSo the distance formula now becomes:\n\n\\[\nd = \\sqrt{(-6)^2 + 9^2}\n\\]\n\nNext, we calculate the squares of \\(-6\\) and \\(9\\):\n\n\\[\n(-6)^2 = 36\n\\]\n\\[\n9^2 = 81\n\\]\n\nAdding these values together, we get:\n\n\\[\nd = \\sqrt{36 + 81} = \\sqrt{117}\n\\]\n\nWe can simplify \\(\\sqrt{117}\\) by factoring it into its prime factors:\n\n\\[\n117 = 9 \\times 13 = 3^2 \\times 13\n\\]\n\nSo,\n\n\\[\n\\sqrt{117} = \\sqrt{3^2 \\times 13} = 3\\sqrt{13}\n\\]\n\nTherefore, the distance between the points \\((2, -6)\\) and \\((-4, 3)\\) is:\n\n\\[\n\\boxed{3\\sqrt{13}}\n\\]",
+  "extracted_answer": "3\\sqrt{13}",
+  "is_correct": true,
+  "response_length": 1114,
+  "latency_ms": 20133.690118789673,
+  "timestamp": "2026-04-08T17:06:25.249965"
+}

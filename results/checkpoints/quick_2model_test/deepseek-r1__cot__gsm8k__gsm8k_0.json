@@ -1,0 +1,12 @@
+{
+  "problem_id": "gsm8k_0",
+  "model_name": "deepseek-r1",
+  "prompt_method": "cot",
+  "dataset": "gsm8k",
+  "raw_response": "<think>\nOkay, so I need to figure out how much money Janet makes every day at the farmers' market. Let me break down the problem step by step.\n\nFirst, Janet's ducks lay 16 eggs per day. That's the total number of eggs available each day. Now, she uses some of these eggs for breakfast and some for baking muffins. The rest are sold at $2 each at the farmers' market. I need to find out how many eggs are left after she uses some for breakfast and some for muffins, and then multiply that by $2 to get the total earnings.\n\nLet me list out the given information:\n\n- Total eggs per day: 16\n- Breakfast: 3 eggs per day\n- Muffins: 4 eggs per day\n- Selling price per egg: $2\n\nSo, first, I'll calculate how many eggs Janet uses for breakfast and muffins. That should be 3 (for breakfast) plus 4 (for muffins), which equals 7 eggs used daily.\n\nNow, subtracting the used eggs from the total eggs gives me the number of eggs left for sale. So, 16 total eggs minus 7 used eggs equals 9 eggs left.\n\nNext, since each of these 9 eggs is sold for $2, I'll multiply 9 by $2 to find the total earnings. 9 times 2 is 18, so she makes $18 every day at the farmers' market.\n\nWait, let me double-check my calculations to make sure I didn't make a mistake. \n\nTotal eggs: 16\nUsed for breakfast: 3\nUsed for muffins: 4\nTotal used: 3 + 4 = 7\nLeftover: 16 - 7 = 9\nEarnings: 9 * $2 = $18\n\nYes, that seems correct. So, Janet makes $18 every day at the farmers' market.\n</think>\n\nTo determine how much Janet makes every day at the farmers' market, follow these steps:\n\n1. **Calculate the total number of eggs laid per day:**\n   \\[\n   16 \\text{ eggs/day}\n   \\]\n\n2. **Determine the number of eggs used for breakfast:**\n   \\[\n   3 \\text{ eggs/day}\n   \\]\n\n3. **Determine the number of eggs used for baking muffins:**\n   \\[\n   4 \\text{ eggs/day}\n   \\]\n\n4. **Calculate the total number of eggs used daily:**\n   \\[\n   3 + 4 = 7 \\text{ eggs/day}\n   \\]\n\n5. **Find the number of eggs left for sale:**\n   \\[\n   16 - 7 = 9 \\text{ eggs/day}\n   \\]\n\n6. **Calculate the total earnings from selling the remaining eggs:**\n   \\[\n   9 \\text{ eggs} \\times \\$2/\\text{egg} = \\$18\n   \\]\n\n**Final Answer:**  \n\\[\n\\boxed{18}\n\\]",
+  "extracted_answer": "18",
+  "is_correct": true,
+  "response_length": 2170,
+  "latency_ms": 112579.05721664429,
+  "timestamp": "2026-04-08T16:54:22.465597"
+}

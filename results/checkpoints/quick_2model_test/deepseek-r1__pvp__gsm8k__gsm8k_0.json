@@ -1,0 +1,12 @@
+{
+  "problem_id": "gsm8k_0",
+  "model_name": "deepseek-r1",
+  "prompt_method": "pvp",
+  "dataset": "gsm8k",
+  "raw_response": "<think>\nOkay, so I need to figure out how much Janet makes every day at the farmers' market. Let me break this down step by step.\n\nFirst, Janet's ducks lay 16 eggs per day. That's straightforward. So, total eggs = 16.\n\nNow, she eats three eggs for breakfast every morning. Since she does this every day, that means she uses 3 eggs per day for breakfast. So, breakfast consumption = 3 eggs.\n\nNext, she bakes muffins for her friends every day with four eggs. So, she uses 4 eggs for baking. That's muffin eggs = 4 eggs.\n\nNow, I need to find out how many eggs she has left after eating breakfast and baking. So, total eggs = 16. Subtract the breakfast and muffin eggs: 16 - 3 - 4. Let me calculate that: 16 - 3 is 13, and 13 - 4 is 9. So, she has 9 eggs left after these two days.\n\nShe sells the remaining eggs at $2 per fresh duck egg. So, the revenue from selling the eggs would be 9 eggs * $2 per egg. Let me compute that: 9 * 2 = 18. So, she makes $18 every day at the farmers' market.\n\nWait, let me double-check each step to make sure I didn't make any mistakes. \n\n1. Total eggs: 16. Correct.\n2. Breakfast: 3 eggs. Correct.\n3. Muffins: 4 eggs. Correct.\n4. Remaining eggs: 16 - 3 - 4 = 9. Correct.\n5. Revenue: 9 * 2 = 18. Correct.\n\nEverything seems to add up. I don't see any arithmetic errors here. So, I'm confident that Janet makes $18 every day at the farmers' market.\n</think>\n\nTo determine how much Janet makes at the farmers' market, follow these steps:\n\n1. **Total Eggs per Day**: 16 eggs.\n\n2. **Breakfast Consumption**: 3 eggs per day.\n\n3. **Muffin Consumption**: 4 eggs per day.\n\n4. **Remaining Eggs**: Subtract breakfast and muffin consumption from total eggs.\n   - Remaining = 16 - 3 - 4 = 9 eggs.\n\n5. **Revenue from Selling Eggs**: Multiply the remaining eggs by the selling price per egg.\n   - Revenue = 9 eggs * $2/egg = $18.\n\n**Final Answer**: Janet makes $\\boxed{18}$ dollars every day at the farmers' market.",
+  "extracted_answer": "18",
+  "is_correct": true,
+  "response_length": 1927,
+  "latency_ms": 28934.42177772522,
+  "timestamp": "2026-04-08T16:55:24.699767"
+}

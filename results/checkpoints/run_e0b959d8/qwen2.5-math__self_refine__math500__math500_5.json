@@ -1,0 +1,12 @@
+{
+  "problem_id": "math500_5",
+  "model_name": "qwen2.5-math",
+  "prompt_method": "self_refine",
+  "dataset": "math500",
+  "raw_response": "The perimeter of the regular hexagon is \\(\\boxed{42}\\) inches.",
+  "extracted_answer": "42",
+  "is_correct": true,
+  "response_length": 62,
+  "latency_ms": 37552.21605300903,
+  "timestamp": "2026-04-08T17:58:26.093832"
+}

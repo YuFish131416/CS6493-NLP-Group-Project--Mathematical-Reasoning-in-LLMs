@@ -1,0 +1,12 @@
+{
+  "problem_id": "math500_16",
+  "model_name": "qwen2.5-math",
+  "prompt_method": "least_to_most",
+  "dataset": "math500",
+  "raw_response": "[Decomposition]\nTo solve the problem \\(1 - 2 + 3 - 4 + 5 - \\dots + 99 - 100\\), we can break it down into simpler sub-questions. Let's start by observing the pattern and then generalizing it.\n\n1. **Identify the pattern:**\n   The sequence alternates between adding and subtracting consecutive integers. We can group the terms in pairs to simplify the calculation:\n   \\[\n   (1 - 2) + (3 - 4) + (5 - 6) + \\dots + (99 - 100)\n   \\]\n   Each pair \\((2k-1) - 2k\\) (where \\(k\\) is a positive integer) simplifies to \\(-1\\).\n\n2. **Count the number of pairs:**\n   Since we are pairing two numbers at a time, we need to determine how many such pairs there are in the sequence from 1 to 100. There are 100 numbers in total, so there are \\(100/2 = 50\\) pairs.\n\n3. **Calculate the sum of the pairs:**\n   Each pair sums to \\(-1\\), and there are 50 pairs. Therefore, the total sum is:\n   \\[\n   50 \\times (-1) = -50\n   \\]\n\nSo, the final answer is:\n\\[\n\\boxed{-50}\n\\]\n\n[Solution]\nTo solve the problem \\(1 - 2 + 3 - 4 + 5 - \\dots + 99 - 100\\), we can break it down into simpler sub-questions.\n\n1. **Identify the pattern:**\n   The sequence alternates between adding and subtracting consecutive integers. We can group the terms in pairs to simplify the calculation:\n   \\[\n   (1 - 2) + (3 - 4) + (5 - 6) + \\dots + (99 - 100)\n   \\]\n   Each pair \\((2k-1) - 2k\\) (where \\(k\\) is a positive integer) simplifies to \\(-1\\).\n\n2. **Count the number of pairs:**\n   Since we are pairing two numbers at a time, we need to determine how many such pairs there are in the sequence from 1 to 100. There are 100 numbers in total, so there are \\(100/2 = 50\\) pairs.\n\n3. **Calculate the sum of the pairs:**\n   Each pair sums to \\(-1\\), and there are 50 pairs. Therefore, the total sum is:\n   \\[\n   50 \\times (-1) = -50\n   \\]\n\nSo, the final answer is:\n\\[\n\\boxed{-50}\n\\]",
+  "extracted_answer": "-50",
+  "is_correct": true,
+  "response_length": 1824,
+  "latency_ms": 26812.151193618774,
+  "timestamp": "2026-04-08T18:39:44.692233"
+}

@@ -1,0 +1,53 @@
+# Configuration Template
+# Copy this file to config.local.yaml and fill in your local settings
+
+models:
+  qwen2.5-math:
+    type: local
+    model_path: "models/qwen2.5-math-1.5b-q4_k_m.gguf"
+    max_context: 4096
+    system_prompt: "You are a mathematical reasoning assistant. Solve the given problem step by step."
+  deepseek-r1:
+    type: local
+    model_path: "models/deepseek-r1-qwen-1.5b-q4_k_m.gguf"
+    max_context: 4096
+    system_prompt: "You are a mathematical reasoning assistant. Solve the given problem step by step."
+  gpt-4o-mini:
+    type: api
+    api_base: "https://api.openai.com/v1"
+    api_key_env: "OPENAI_API_KEY"
+    model_id: "gpt-4o-mini"
+    max_context: 128000
+    system_prompt: "You are a mathematical reasoning assistant. Solve the given problem step by step."
+  deepseek-chat:
+    type: api
+    api_base: "https://api.deepseek.com/v1"
+    api_key_env: "DEEPSEEK_API_KEY"
+    model_id: "deepseek-chat"
+    max_context: 64000
+    system_prompt: "You are a mathematical reasoning assistant. Solve the given problem step by step."
+
+datasets:
+  math500:
+    hf_id: "HuggingFaceH4/MATH-500"
+    split: "test"
+  gsm8k:
+    hf_id: "openai/gsm8k"
+    split: "test"
+  aime2024:
+    hf_id: "HuggingFaceH4/aime_2024"
+    split: "train"
+
+experiments:
+  temperature: 0.0
+  max_tokens: 2048
+  seed: 42
+  n_samples: 5          # for Self-Consistency
+  max_refine_rounds: 2  # for Self-Refine
+  checkpoint_dir: "results/checkpoints"
+  output_dir: "results"
+
+paths:
+  data_cache: "data"
+  models_dir: "models"
+  results_dir: "results"
