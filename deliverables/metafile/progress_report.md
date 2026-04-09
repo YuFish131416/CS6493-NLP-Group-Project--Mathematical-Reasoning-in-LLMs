@@ -2,7 +2,7 @@
 
 **CS6493 NLP Group Project — Topic 1: Mathematical Reasoning Ability of Large Language Models**
 
-**Group Members**: [Member A], [Member B], [Member C], [Member D], [Member E]
+**Group Members**: 余沛翰, 翁梓严, 胡薛林, 赵海超, 邓乐盈
 **Date**: April 22, 2026
 
 ---

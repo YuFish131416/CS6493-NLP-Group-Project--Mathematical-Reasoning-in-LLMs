@@ -2,7 +2,7 @@
 
 **CS6493 NLP Group Project — Topic 1: Mathematical Reasoning Ability of LLMs**
 
-**Group Members**: [Member A], [Member B], [Member C], [Member D], [Member E]
+**Group Members**: 余沛翰, 翁梓严, 胡薛林, 赵海超, 邓乐盈
 **Course**: CS6493 Natural Language Processing, City University of Hong Kong, Q2 2025-2026
 **Date**: May 6, 2026
 

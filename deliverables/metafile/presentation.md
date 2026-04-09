@@ -2,7 +2,7 @@
 
 **CS6493 NLP Group Project — Topic 1**
 **Duration**: 15 minutes
-**Team**: [Member A], [Member B], [Member C], [Member D], [Member E]
+**Team**: 余沛翰, 翁梓严, 胡薛林, 赵海超, 邓乐盈
 
 ---
 
@@ -12,7 +12,7 @@
 
 - **Course**: CS6493 Natural Language Processing
 - **University**: City University of Hong Kong, Q2 2025-2026
-- **Team Members**: [Member A], [Member B], [Member C], [Member D], [Member E]
+- **Team Members**: 余沛翰, 翁梓严, 胡薛林, 赵海超, 邓乐盈
 - **Key Result**: Our novel PVP method achieves **64.0%** accuracy, outperforming the CoT baseline (**57.5%**)
 
 ---
