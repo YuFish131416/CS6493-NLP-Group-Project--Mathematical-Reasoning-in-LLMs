@@ -77,14 +77,14 @@ We implement five prompting methods:
 
 ## 4. Preliminary Results
 
-We have completed experiments across 2 models × 5 methods × 2 datasets with 156 total problem evaluations.
+We have completed experiments across 2 models × 5 methods × 2 datasets with 164 total problem evaluations.
 
 ### 4.1 Overall Results
 
 | Metric | Value |
 |--------|-------|
-| Total problems evaluated | 156 |
-| Overall accuracy | **58.97%** (92/156) |
+| Total problems evaluated | 164 |
+| Overall accuracy | **57.93%** (95/164) |
 | Answer extraction success | **100%** across all combinations |
 
 ### 4.2 Model Comparison
@@ -92,9 +92,9 @@ We have completed experiments across 2 models × 5 methods × 2 datasets with 15
 | Model | Correct | Total | Accuracy |
 |-------|---------|-------|----------|
 | Qwen2.5-Math-1.5B | 79 | 120 | **65.83%** |
-| DeepSeek-R1-Qwen-1.5B | 13 | 36 | **36.11%** |
+| DeepSeek-R1-Qwen-1.5B | 16 | 44 | **36.36%** |
 
-Qwen2.5-Math-1.5B outperforms DeepSeek-R1 by +29.7 percentage points, confirming that task-specific fine-tuning is crucial for mathematical reasoning.
+Qwen2.5-Math-1.5B outperforms DeepSeek-R1 by +29.5 percentage points, confirming that task-specific fine-tuning is crucial for mathematical reasoning.
 
 ### 4.3 Method Comparison
 
@@ -104,7 +104,7 @@ Qwen2.5-Math-1.5B outperforms DeepSeek-R1 by +29.7 percentage points, confirming
 | 2 | Self-Refine | **66.67%** |
 | 3 | **PVP (Ours)** | **64.00%** |
 | 4 | CoT (Baseline) | 57.45% |
-| 5 | Self-Consistency | 45.95% |
+| 5 | Self-Consistency | 44.44% |
 
 ### 4.4 PVP vs Baselines
 
@@ -115,7 +115,7 @@ PVP achieves **64.00%** accuracy, outperforming the CoT baseline (**57.45%**) by
 | Dataset | Accuracy |
 |---------|----------|
 | GSM8K (grade school) | **75.00%** |
-| MATH-500 (competition) | **56.06%** |
+| MATH-500 (competition) | **55.00%** |
 
 ---
 
@@ -129,7 +129,7 @@ PVP achieves **64.00%** accuracy, outperforming the CoT baseline (**57.45%**) by
 - [x] Evaluation framework (answer extraction, math parsing, metrics)
 - [x] Experiment runner with checkpoint/resume support
 - [x] 63/63 unit tests passing
-- [x] Pilot experiments (156 problems across 14 model×method×dataset combinations)
+- [x] Pilot experiments (164 problems across 14 model×method×dataset combinations)
 - [x] 7 visualization charts generated
 - [x] Streamlit Web Demo (interactive solver, dashboard, comparison)
 

@@ -147,9 +147,9 @@ Results (JSON) + Visualizations (PNG)
 | Model | Accuracy | Correct/Total |
 |-------|----------|--------------|
 | **Qwen2.5-Math-1.5B** | **65.83%** | 79/120 |
-| **DeepSeek-R1-Qwen-1.5B** | **36.11%** | 13/36 |
+| **DeepSeek-R1-Qwen-1.5B** | **36.36%** | 16/44 |
 
-> **Gap**: +29.7 percentage points
+> **Gap**: +29.5 percentage points
 
 **📊 Chart**: `fig1_accuracy_by_model.png`
 
@@ -168,7 +168,7 @@ Results (JSON) + Visualizations (PNG)
 | 🥈 | **Self-Refine** | **66.67%** | +9.2 |
 | 🥉 | **PVP (Ours)** | **64.00%** | +6.5 |
 | 4 | CoT (Baseline) | 57.45% | — |
-| 5 | Self-Consistency | 45.95% | −11.5 |
+| 5 | Self-Consistency | 44.44% | −13.0 |
 
 **📊 Charts**: `fig2_accuracy_by_method.png`, `fig5_heatmap_model_method.png`
 
@@ -202,7 +202,7 @@ Results (JSON) + Visualizations (PNG)
 |--------|----------|-------------|------|
 | Self-Refine | 66.67% | 81–98s | 3× |
 | **PVP (Ours)** | **64.00%** | **24–31s** | **1×** |
-| Self-Consistency | 45.95% | 82–335s | 5× |
+| Self-Consistency | 44.44% | 82–335s | 5× |
 
 > PVP achieves **97% of Self-Refine's accuracy** at **30% of the cost**
 
@@ -218,12 +218,12 @@ Results (JSON) + Visualizations (PNG)
 | Least-to-Most | 69.6% | ~43s | ⭐⭐⭐⭐ |
 | CoT | 57.5% | ~47s | ⭐⭐⭐ |
 | Self-Refine | 66.7% | ~89s | ⭐⭐ |
-| Self-Consistency | 46.0% | ~208s | ⭐ Worst |
+| Self-Consistency | 44.4% | ~208s | ⭐ Worst |
 
 **📊 Charts**: `fig6_length_vs_accuracy.png`, `fig7_latency_by_method.png`
 
 ### Key Finding
-> Longer responses ≠ higher accuracy. DeepSeek-R1 + Self-Consistency generates **23K+ character** responses but achieves only **16.7%** accuracy.
+> Longer responses ≠ higher accuracy. DeepSeek-R1 + Self-Consistency generates **24K+ character** responses but achieves only **25.0%** accuracy.
 
 ---
 
@@ -269,7 +269,7 @@ streamlit run src/app/main.py
 
 ### Summary
 
-1. ✅ **Systematic evaluation**: 5 methods × 2 models × 2 datasets = 156 problems evaluated
+1. ✅ **Systematic evaluation**: 5 methods × 2 models × 2 datasets = 164 problems evaluated
 2. ✅ **PVP is effective**: +6.5% over CoT baseline with single-pass efficiency
 3. ✅ **Key insight**: Task-specific models + structured prompting = best results
 4. ✅ **Open-source framework**: Reproducible with `pip install` + documented commands
@@ -305,7 +305,7 @@ streamlit run src/app/main.py
 | Qwen2.5-Math | Least-to-Most | 100.0% | 65.0% |
 | Qwen2.5-Math | PVP | 66.7% | 60.0% |
 | DeepSeek-R1 | CoT | 100.0% | 35.0% |
-| DeepSeek-R1 | Self-Consistency | — | 16.7% |
+| DeepSeek-R1 | Self-Consistency | — | 25.0% |
 | DeepSeek-R1 | PVP | 100.0% | — |
 
 ### Backup 2: Answer Extraction Pipeline

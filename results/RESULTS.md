@@ -2,7 +2,7 @@
 
 > **Project**: CS6493 NLP Group Project — Topic 1: Mathematical Reasoning Ability of LLMs
 > **Date**: April 2026
-> **Overall Accuracy**: **58.97%** (92/156 problems)
+> **Overall Accuracy**: **57.93%** (95/164 problems)
 
 ---
 
@@ -50,10 +50,10 @@
 | Model | Correct | Total | Accuracy |
 |-------|---------|-------|----------|
 | **Qwen2.5-Math-1.5B** | 79 | 120 | **65.83%** |
-| **DeepSeek-R1-Qwen-1.5B** | 13 | 36 | **36.11%** |
-| **Overall** | **92** | **156** | **58.97%** |
+| **DeepSeek-R1-Qwen-1.5B** | 16 | 44 | **36.36%** |
+| **Overall** | **95** | **164** | **57.93%** |
 
-Qwen2.5-Math-1.5B significantly outperforms DeepSeek-R1-Qwen-1.5B by **+29.7 percentage points**. This is expected since Qwen2.5-Math is specifically fine-tuned for mathematical tasks, while DeepSeek-R1 is a general-purpose reasoning model distilled to a smaller scale.
+Qwen2.5-Math-1.5B significantly outperforms DeepSeek-R1-Qwen-1.5B by **+29.5 percentage points**. This is expected since Qwen2.5-Math is specifically fine-tuned for mathematical tasks, while DeepSeek-R1 is a general-purpose reasoning model distilled to a smaller scale.
 
 ![Accuracy by Model](figures/fig1_accuracy_by_model.png)
 
@@ -65,7 +65,7 @@ Qwen2.5-Math-1.5B significantly outperforms DeepSeek-R1-Qwen-1.5B by **+29.7 per
 | 2 | **Self-Refine** | 16 | 24 | **66.67%** |
 | 3 | **PVP (Ours)** | 16 | 25 | **64.00%** |
 | 4 | **CoT (Baseline)** | 27 | 47 | **57.45%** |
-| 5 | **Self-Consistency** | 17 | 37 | **45.95%** |
+| 5 | **Self-Consistency** | 20 | 45 | **44.44%** |
 
 **Key Findings**:
 - **Least-to-Most** achieves the highest accuracy by decomposing complex problems into manageable sub-problems.
@@ -79,7 +79,7 @@ Qwen2.5-Math-1.5B significantly outperforms DeepSeek-R1-Qwen-1.5B by **+29.7 per
 | Dataset | Correct | Total | Accuracy |
 |---------|---------|-------|----------|
 | **GSM8K** | 18 | 24 | **75.00%** |
-| **MATH-500** | 74 | 132 | **56.06%** |
+| **MATH-500** | 77 | 140 | **55.00%** |
 
 GSM8K problems (grade-school level) are substantially easier for the models than MATH-500 competition-level problems. Note: AIME 2024 data was not included in the final experiment runs shown here.
 
@@ -105,7 +105,7 @@ GSM8K problems (grade-school level) are substantially easier for the models than
 | Qwen2.5-Math | PVP | MATH-500 | 12/20 | **60.0%** | 23.9s | 1,542 chars |
 | DeepSeek-R1 | CoT | GSM8K | 2/2 | **100.0%** | 72.9s | 2,038 chars |
 | DeepSeek-R1 | CoT | MATH-500 | 7/20 | 35.0% | 68.0s | 4,647 chars |
-| DeepSeek-R1 | Self-Consistency | MATH-500 | 2/12 | 16.7% | 334.9s | 23,676 chars |
+| DeepSeek-R1 | Self-Consistency | MATH-500 | 5/20 | 25.0% | 359.1s | 24,463 chars |
 | DeepSeek-R1 | PVP | GSM8K | 2/2 | **100.0%** | 25.7s | 1,827 chars |
 
 ### 3.2 Model × Method Interaction
@@ -115,7 +115,7 @@ GSM8K problems (grade-school level) are substantially easier for the models than
 The grouped bar chart reveals:
 - **Qwen2.5-Math** consistently outperforms **DeepSeek-R1** across all prompt methods.
 - **DeepSeek-R1** shows extremely high variance: perfect on simple GSM8K problems but weak on MATH-500.
-- **DeepSeek-R1 + Self-Consistency** is the worst combination (16.7%), suggesting that sampling diverse reasoning paths is counterproductive for this model.
+- **DeepSeek-R1 + Self-Consistency** is the worst combination (25.0%), suggesting that sampling diverse reasoning paths is counterproductive for this model.
 
 ### 3.3 Accuracy Heatmap
 
@@ -143,14 +143,14 @@ The grouped bar chart reveals:
 
 ![Length vs Accuracy](figures/fig6_length_vs_accuracy.png)
 
-**Observation**: Longer responses do not necessarily correlate with higher accuracy. DeepSeek-R1's Self-Consistency produces extremely long responses (23K+ chars) but achieves only 16.7% accuracy. Qwen2.5-Math achieves the best accuracy with moderate response lengths (1K–3K chars).
+**Observation**: Longer responses do not necessarily correlate with higher accuracy. DeepSeek-R1's Self-Consistency produces extremely long responses (24K+ chars) but achieves only 25.0% accuracy. Qwen2.5-Math achieves the best accuracy with moderate response lengths (1K–3K chars).
 
 ---
 
 ## 5. Key Findings and Discussion
 
 ### Finding 1: Model Choice Matters More Than Prompt Engineering
-- **Qwen2.5-Math** (65.8%) dominates **DeepSeek-R1** (36.1%) regardless of prompting strategy.
+- **Qwen2.5-Math** (65.8%) dominates **DeepSeek-R1** (36.4%) regardless of prompting strategy.
 - A task-specific model with simple CoT (70% on MATH-500) outperforms a general model with any advanced method.
 
 ### Finding 2: Problem Decomposition (Least-to-Most) Is Most Effective
@@ -158,7 +158,7 @@ The grouped bar chart reveals:
 - This structured decomposition helps small models manage complex reasoning chains.
 
 ### Finding 3: Self-Consistency Struggles with Small Models
-- **Self-Consistency** (46.0%) underperforms the CoT baseline (57.5%).
+- **Self-Consistency** (44.4%) underperforms the CoT baseline (57.5%).
 - Small 1.5B models lack the diversity needed for effective majority voting — the 5 samples tend to either all succeed or all fail on the same problems.
 
 ### Finding 4: Verification-Based Methods Show Promise
@@ -198,7 +198,7 @@ results/
 │   ├── final_results.json   # Full results with all responses
 │   └── *.json               # Per-run result files
 └── checkpoints/             # Per-problem checkpoint data
-    ├── run_e0b959d8/        # Main experiment run (135 files)
+    ├── run_e0b959d8/        # Main experiment run (140 files)
     └── .../                 # Other experiment runs
 ```
 

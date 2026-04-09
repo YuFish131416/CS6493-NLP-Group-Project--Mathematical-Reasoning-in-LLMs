@@ -138,7 +138,7 @@ Systematically evaluate how different prompting strategies affect the mathematic
 - **要求内容**:
   - 项目目标与研究问题
   - 已完成工作（数据管道、模型推理、提示方法实现、初步实验结果）
-  - 初步实验数据（已有 58.97% 总体准确率，7 张可视化图表）
+  - 初步实验数据（已有 57.93% 总体准确率，7 张可视化图表）
   - 接下来的计划与时间表
 - **模板位置**: `docs/PROGRESS_REPORT.md`
 

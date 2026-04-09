@@ -16,7 +16,7 @@
 
 | 指标 | 数值 |
 |------|------|
-| 总体准确率 | **58.97%**（92/156） |
+| 总体准确率 | **57.93%**（95/164） |
 | 最佳模型 | Qwen2.5-Math-1.5B（**65.8%**） |
 | 最佳方法 | Least-to-Most（**69.6%**） |
 | PVP（我们的方法） | **64.0%**（优于 CoT 基线） |
@@ -315,7 +315,7 @@ experiments:
 |---|--------|----------|------|
 | 1 | **源代码** | `src/`、`scripts/`、`tests/`、`notebooks/` | 30 个 Python 模块 + 5 个脚本 + 63 个单元测试 + 3 个 Jupyter Notebook |
 | 2 | **项目终期报告** | [`deliverables/project_report.md`](deliverables/project_report.md) | ≤ 6 页正文：Introduction → Related Work → Methodology → Experiments → Discussion → Conclusion + 附录（提示模板、架构图、可视化图表） |
-| 3 | **中期进度报告** | [`deliverables/progress_report.md`](deliverables/progress_report.md) | ≤ 5 页：项目目标、方法论、初步实验结果（58.97% 准确率）、后续计划，截止 4 月 22 日 |
+| 3 | **中期进度报告** | [`deliverables/progress_report.md`](deliverables/progress_report.md) | ≤ 5 页：项目目标、方法论、初步实验结果（57.93% 准确率）、后续计划，截止 4 月 22 日 |
 | 4 | **课堂演示大纲** | [`deliverables/presentation.md`](deliverables/presentation.md) | 15 分钟 / 15 页幻灯片 + 备用幻灯片，含 Streamlit 现场 Demo |
 | 5 | **README 文档** | [`README.md`](README.md)（本文件） | 中文，含环境搭建、实验复现、配置说明 |
 

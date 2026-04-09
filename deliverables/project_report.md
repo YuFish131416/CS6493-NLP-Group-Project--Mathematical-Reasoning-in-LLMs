@@ -10,7 +10,7 @@
 
 ## Abstract
 
-We systematically evaluate how five prompting strategies affect the mathematical reasoning performance of Large Language Models (LLMs) across different model scales and problem difficulties. We test Chain-of-Thought (CoT), Self-Consistency, Self-Refine, Least-to-Most, and our novel Progressive Verification Prompting (PVP) on two local 1.5B-parameter models using MATH-500 and GSM8K benchmarks. Our experiments on 156 problems show that: (1) model choice matters more than prompt engineering, with the math-specialized Qwen2.5-Math-1.5B (65.8%) vastly outperforming the general-purpose DeepSeek-R1 (36.1%); (2) problem decomposition via Least-to-Most achieves the highest accuracy (69.6%); (3) our PVP method (64.0%) outperforms the CoT baseline (57.5%) with comparable inference latency; and (4) Self-Consistency underperforms with small models due to insufficient reasoning diversity.
+We systematically evaluate how five prompting strategies affect the mathematical reasoning performance of Large Language Models (LLMs) across different model scales and problem difficulties. We test Chain-of-Thought (CoT), Self-Consistency, Self-Refine, Least-to-Most, and our novel Progressive Verification Prompting (PVP) on two local 1.5B-parameter models using MATH-500 and GSM8K benchmarks. Our experiments on 164 problems show that: (1) model choice matters more than prompt engineering, with the math-specialized Qwen2.5-Math-1.5B (65.8%) vastly outperforming the general-purpose DeepSeek-R1 (36.4%); (2) problem decomposition via Least-to-Most achieves the highest accuracy (69.6%); (3) our PVP method (64.0%) outperforms the CoT baseline (57.5%) with comparable inference latency; and (4) Self-Consistency underperforms with small models due to insufficient reasoning diversity.
 
 ---
 
@@ -149,13 +149,13 @@ Both models are run on CPU using llama-cpp-python with Q4_K_M quantization, requ
 
 ### 4.2 Overall Results
 
-We evaluated 156 problems across 14 model × method × dataset combinations.
+We evaluated 164 problems across 14 model × method × dataset combinations.
 
 | Model | Correct | Total | Accuracy |
 |-------|---------|-------|----------|
 | **Qwen2.5-Math-1.5B** | 79 | 120 | **65.83%** |
-| **DeepSeek-R1-Qwen-1.5B** | 13 | 36 | **36.11%** |
-| **Overall** | **92** | **156** | **58.97%** |
+| **DeepSeek-R1-Qwen-1.5B** | 16 | 44 | **36.36%** |
+| **Overall** | **95** | **164** | **57.93%** |
 
 ### 4.3 Accuracy by Prompt Method
 
@@ -165,7 +165,7 @@ We evaluated 156 problems across 14 model × method × dataset combinations.
 | 2 | **Self-Refine** | 16 | 24 | **66.67%** |
 | 3 | **PVP (Ours)** | 16 | 25 | **64.00%** |
 | 4 | **CoT (Baseline)** | 27 | 47 | **57.45%** |
-| 5 | **Self-Consistency** | 17 | 37 | **45.95%** |
+| 5 | **Self-Consistency** | 20 | 45 | **44.44%** |
 
 ### 4.4 Detailed Model × Method Breakdown
 
@@ -183,7 +183,7 @@ We evaluated 156 problems across 14 model × method × dataset combinations.
 | Qwen2.5-Math | PVP | MATH-500 | 12/20 | **60.0%** | 23.9s |
 | DeepSeek-R1 | CoT | GSM8K | 2/2 | **100.0%** | 72.9s |
 | DeepSeek-R1 | CoT | MATH-500 | 7/20 | 35.0% | 68.0s |
-| DeepSeek-R1 | Self-Consistency | MATH-500 | 2/12 | 16.7% | 334.9s |
+| DeepSeek-R1 | Self-Consistency | MATH-500 | 5/20 | 25.0% | 359.1s |
 | DeepSeek-R1 | PVP | GSM8K | 2/2 | **100.0%** | 25.7s |
 
 ### 4.5 Accuracy by Dataset
@@ -191,7 +191,7 @@ We evaluated 156 problems across 14 model × method × dataset combinations.
 | Dataset | Correct | Total | Accuracy |
 |---------|---------|-------|----------|
 | GSM8K | 18 | 24 | **75.00%** |
-| MATH-500 | 74 | 132 | **56.06%** |
+| MATH-500 | 77 | 140 | **55.00%** |
 
 ### 4.6 Efficiency Analysis
 
@@ -209,7 +209,7 @@ We evaluated 156 problems across 14 model × method × dataset combinations.
 
 ### Finding 1: Model Choice Matters More Than Prompt Engineering
 
-Qwen2.5-Math-1.5B (65.8%) dominates DeepSeek-R1-Qwen-1.5B (36.1%) across all prompting strategies. A task-specific model with simple CoT (70.0% on MATH-500) outperforms a general model with any advanced method. This suggests that for mathematical reasoning, domain-specific fine-tuning provides a stronger foundation than sophisticated prompting alone.
+Qwen2.5-Math-1.5B (65.8%) dominates DeepSeek-R1-Qwen-1.5B (36.4%) across all prompting strategies. A task-specific model with simple CoT (70.0% on MATH-500) outperforms a general model with any advanced method. This suggests that for mathematical reasoning, domain-specific fine-tuning provides a stronger foundation than sophisticated prompting alone.
 
 ### Finding 2: Problem Decomposition Is Most Effective
 
@@ -217,7 +217,7 @@ Least-to-Most achieves the highest accuracy (69.6%) by decomposing complex probl
 
 ### Finding 3: Self-Consistency Struggles with Small Models
 
-Self-Consistency (46.0%) underperforms the CoT baseline (57.5%), contrary to results reported for larger models. With only 1.5B parameters, the models lack sufficient reasoning diversity — the 5 samples tend to either all succeed or all fail on the same problems, making majority voting ineffective. This finding suggests that Self-Consistency requires a minimum model scale threshold to be beneficial.
+Self-Consistency (44.4%) underperforms the CoT baseline (57.5%), contrary to results reported for larger models. With only 1.5B parameters, the models lack sufficient reasoning diversity — the 5 samples tend to either all succeed or all fail on the same problems, making majority voting ineffective. This finding suggests that Self-Consistency requires a minimum model scale threshold to be beneficial.
 
 ### Finding 4: Verification-Based Methods Show Promise
 
@@ -377,9 +377,9 @@ Please solve step by step:
 
 The following 7 charts are generated from experimental data:
 
-1. **fig1_accuracy_by_model.png** — Bar chart comparing Qwen2.5-Math (65.8%) vs DeepSeek-R1 (36.1%)
+1. **fig1_accuracy_by_model.png** — Bar chart comparing Qwen2.5-Math (65.8%) vs DeepSeek-R1 (36.4%)
 2. **fig2_accuracy_by_method.png** — Ranked bar chart of 5 methods (Least-to-Most > Self-Refine > PVP > CoT > SC)
-3. **fig3_accuracy_by_dataset.png** — GSM8K (75.0%) vs MATH-500 (56.1%)
+3. **fig3_accuracy_by_dataset.png** — GSM8K (75.0%) vs MATH-500 (55.0%)
 4. **fig4_model_x_method.png** — Grouped bar chart showing all model × method combinations
 5. **fig5_heatmap_model_method.png** — Heatmap of accuracy across model × method matrix
 6. **fig6_length_vs_accuracy.png** — Scatter plot of response length vs accuracy
